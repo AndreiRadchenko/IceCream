@@ -5,12 +5,30 @@ $desktop: 1200px;
 
 :root {
   // colors
-  --main-text-color: #907e82;
-  --background-color: #e5e5e5;
-
-  //  timing function
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  --secondary-text-color: white;
-  --secondary-background-color: black;
+  --accent-main-color: #d41443;
+  //buttons,main titles,phone#,buy now,current pages, figures etc, accent color in white buttons//
+  --accent-secondary-color: #ffa5ba;
+  //secondary titles,cafe working time, some icons//
+  --text-main-color: #ffffff;
+  //white color text//
+  --text-secondary-color: #000000;
+  //black color text//
+  --text-casual-color: #907e82;
+  //grey color text//
+  --bg-main-color: #fff5f6;
+  //bg-background// //light pink//
+  --bg-secondary-color: #ffffff;
+  //white bg//
+  --bg-modal-color: #e17992;
+  //modal window bg//
+  --bg-pink-color: #ffb8ca;
+  --bg-yellow-color: #f0d1a5;
+  //products &contacts section//
+  --bg-green-color: #c2e297;
+  //products &contacts section//
+  --bg-grey-color: #e1e1e1;
+  //Customer Reviews section//
 }
+
+// //  timing function
+// --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
