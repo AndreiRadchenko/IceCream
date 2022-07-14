@@ -1,3 +1,53 @@
+
 <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <a href="Ice-cream" class="header--logo">
+      
+      <picture>
+        <source  srcset="./image/header/logo-desk.png 1x, 
+        ./image/header/logo-desk-2x.png 2x"
+        @media="(min-width:1200px)"
+        />
+        <source  srcset="./image/header/logo-tab.png 1x, 
+        ./image/header/logo-tab-2x.png 2x"
+        @media="(min-width:768px)"
+        />
+        <source  srcset="./image/header/logo-mob.png 1x, 
+        ./image/header/logo-mob-2x.png 2x"
+        @media="(min-width:320px)"
+        />
+        <img
+        class="img"
+        src="./image/header/logo-mob.png"
+        alt="logo"
+        width="199"
+      />
+      </picture>
+    </a>
+    <button type="button"class="mob-open-btn"><svg width="20" height="12"><use class="icon-open" href="./image/symbol-defs.svg#burger"></use></svg></button>
+  </nav>
+  <div class="mobile-menu is-hidden">
+    <div class="mob-container">
+    <button type="button"class="mob-close-btn"><svg width="14" height="14"><use href="./image/symbol-defs.svg#close-mm"></use></svg></button>
+    <button type="button" class="header-mob-btn">Buy now</button>
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item">
+        <a href="" class="mob-menu__link"
+          >Home</a
+        >
+      </li>
+      <li class="mob-menu__item">
+        <a href="" class="mob-menu__link">About us</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="" class="mob-menu__link">How its made?</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="" class="mob-menu__link">Our products</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="" class="mob-menu__link">Contact</a>
+      </li>
+    </ul>
+  </div>
 </header>
