@@ -1,0 +1,70 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+body {
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: calc(19.5 / 12);
+  letter-spacing: 0.03em;
+
+  //   &.modal-open {
+  //     overflow: hidden;
+  //   }
+  //   &.mobile-menu-open {
+  //     overflow: hidden;
+  //   }
+
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 0;
+  color: inherit;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @media screen and (max-width: $telephone) {
+    width: 100%;
+  }
+  width: $telephone;
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
