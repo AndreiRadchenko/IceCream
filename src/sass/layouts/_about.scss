@@ -1,0 +1,44 @@
+// .button {
+//   cursor: pointer;
+//   border-style: none;
+//   border-radius: 22px;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.29;
+//   color: #d41443;
+//   background: #ffffff;
+// }
+
+.about {
+  background-color: #fff5f6;
+}
+
+.about-btn {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  width: 176px;
+  height: 44px;
+  color: #d41443;
+  background: #ffffff;
+  fill: #d41443;
+  display: inline-flex;
+  align-items: center;
+  padding: 17px 57px 19px 37px;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background: #d41443;
+    fill: #ffffff;
+  }
+}
+
+// .about-btn__icon {
+//   margin-left: 13.62px;
+// }
