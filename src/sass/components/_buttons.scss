@@ -1,0 +1,18 @@
+%button {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  color: --accent-main-color;
+  background: --bg-secondary-color;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: --text-main-color;
+    background: --accent-main-color;
+  }
+}
