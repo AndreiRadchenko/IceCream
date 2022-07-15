@@ -1,5 +1,12 @@
 .about {
   background-color: var(--bg-main-color);
+  background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
+  // @include retina {
+  //   background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+  // }
+  background-repeat: no-repeat;
+  background-position: 44% 70%;
+  background-size: auto;
 }
 .about__pretitle {
   font-family: 'Titan One';
@@ -61,17 +68,15 @@
   font-size: 14px;
   line-height: 1.29;
   font-family: 'DM Sans';
-  align-items: center;
   display: flex;
   text-align: center;
-  // width: 176px;
-  // height: 44px;
-  display: inline-flex;
+  width: 176px;
+  height: 44px;
   align-items: center;
   padding: 17px 37px;
   color: var(--accent-main-color);
   background: var(--bg-secondary-color);
-  fill: var(--accent-main-color);
+  stroke: var(--accent-main-color);
   transition: color 250ms var(--timing-function),
     fill 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
@@ -79,10 +84,18 @@
   &:focus {
     color: var(--text-main-color);
     background: var(--accent-main-color);
-    fill: var(--text-main-color);
+    stroke: var(--text-main-color);
   }
 }
-
 .about-btn__icon {
-  margin-left: 13.62px;
+  margin-left: 14px;
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  stroke: var(--accent-main-color);
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    stroke: var(--text-main-color);
+  }
 }
