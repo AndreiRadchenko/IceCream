@@ -3,20 +3,56 @@
     background-color: #FFF5F6;
     padding-bottom: 60px;
 }
+
+.advanteges__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.advanteges__item::before {
+    content: "";
+    display: flex;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.advanteges__item--first::before {
+    width: 33px;
+    background-image: url("../images/advanteges/first.png");
+}
+
+.advanteges__item--second::before {
+    content: "";
+    width: 50px;
+    background-image: url("../images/advanteges/second.png");
+}
+
+.advanteges__item--last::before {
+    content: "";
+    width: 44px;
+    background-image: url("../images/advanteges/last.png");
+}
+
 .advanteges__item-count {
+    display: flex;
+    width: 98px;
+    height: 56px;
     font-family: 'Titan One';
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-color: #D41443;
+    color: #D41443;
+    margin-bottom: 4px;
 }
 
 .advanteges__item-text {
+    max-width: 230px;
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 12px;
     line-height: 1.67;
     color: #000000;
 }
-
