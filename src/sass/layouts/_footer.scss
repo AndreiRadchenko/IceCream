@@ -1,0 +1,98 @@
+.footer {
+  @extend .section;
+  background-color: var(--bg-main-color);
+  padding-top: 40px;
+  padding-bottom: 3px;
+}
+
+.section__label {
+  width: 232px;
+  margin-bottom: 16px;
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  color: var(--accent-secondary-color);
+  @media screen and (min-width: $tablet) {
+    width: 340px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: fit-content;
+  }
+}
+.section__header {
+  width: 200px;
+  margin-bottom: 40px;
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-main-color);
+  @media screen and (min-width: $tablet) {
+    width: 340px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: fit-content;
+  }
+}
+.social-list {
+  @extend .list;
+  display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+.social-list__item {
+  color: var(--accent-secondary-color);
+}
+.social-list__href {
+  @extend .link;
+  color: var(--accent-secondary-color);
+  @include customTransition(color);
+  &:hover,
+  &:focus {
+    color: var(--accent-main-color);
+  }
+}
+.social-list__icon {
+  fill: currentColor;
+}
+.text-align-right {
+  text-align: right;
+}
+.link-tel {
+  @extend .link;
+  margin-bottom: 25px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0.01em;
+  color: var(--accent-main-color);
+}
+.link-tel__text {
+  color: var(--text-secondary-color);
+}
+.text-align-center {
+  position: relative;
+  text-align: center;
+  padding-top: 16px;
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100vw;
+    background-color: var(--footer-border-color);
+  }
+}
+.copyright {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: var(--text-casual-color);
+}
