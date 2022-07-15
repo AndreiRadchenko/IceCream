@@ -1,0 +1,67 @@
+.hero {
+  position: relative;
+  z-index: -2;
+  font-family: 'Titan One', cursive;
+  padding-top: 194px;
+  padding-bottom: 158px;
+  background-color: var(--bg-pink-color);
+
+  &__title {
+    max-width: 218px;
+    margin-bottom: 20px;
+    // @include font(400, 26px, 1.16, 0.04em);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--bg-secondary-color);
+  }
+}
+.hero__title--accent {
+  // @include font(400, 48px, 0.96, 0.04em);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-main-color);
+}
+
+.hero__elipse {
+  position: absolute;
+  z-index: -3;
+  left: 36px;
+  top: 83px;
+  width: 346px;
+  height: 344px;
+  background-color: var(--accent-secondary-color);
+  border-radius: 50%;
+}
+
+.hero__image {
+  position: absolute;
+  top: 92px;
+  left: 117px;
+  z-index: -3;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  font-family: 'DM Sans', sans-serif;
+  // @include font(400, 8px, 1.25, 0.04em);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  background-color: var(--accent-main-color);
+  color: var(--text-main-color);
+  padding: 7px 13px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn--reverce {
+  background-color: var(--bg-secondary-color);
+  color: var(--accent-main-color);
+}
