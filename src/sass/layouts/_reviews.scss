@@ -2,10 +2,13 @@
   margin-top: 60px;
   margin-bottom: 60px;
 }
+.reviews__img-wrap {
+  display: flex;
+  justify-content: center;
+}
 .reviews__img {
   border-radius: 50%;
   margin-bottom: 32px;
-  margin-left: 35%;
 }
 .reviews__text-wrap {
   max-width: 320px;
