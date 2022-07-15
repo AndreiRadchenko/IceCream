@@ -171,7 +171,7 @@
 
   content: '';
   background-image: url(/src/images/reviews/Ellipse.svg);
-  text-align: center;
+  background-repeat: no-repeat;
 
   opacity: 0.25;
   color: #d9d9d9;
@@ -181,4 +181,5 @@
 }
 .slick-dots li.slick-active button:before {
   background-image: url(/src/images/reviews/slider-house.svg);
+  opacity: 1;
 }
