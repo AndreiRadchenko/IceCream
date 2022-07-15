@@ -1,3 +1,42 @@
 <section class="reviews">
-  <container></container>
+  <div class="container">
+    <div class="reviews__card">
+      <picture>
+        <source
+          srcset="
+            /src/images/reviews/miha.jpg    1x,
+            /src/images/reviews/miha-2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/reviews/miha.jpg    1x,
+            /src/images/reviews/miha-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/reviews/miha.jpg    1x,
+            /src/images/reviews/miha-2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="reviews__img"
+          src="/src/images/reviews/miha.jpg"
+          alt="Игорь"
+          width="85"
+          height="85"
+        />
+      </picture>
+      <p class="reviews__text icon-quote">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
+      <p class="reviews__text-name">Emily, Los Angeles</p>
+    </div>
+  </div>
 </section>
