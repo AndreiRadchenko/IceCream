@@ -16,6 +16,8 @@ body {
   font-size: 12px;
   line-height: calc(19.5 / 12);
   letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 400;
 
   //   &.modal-open {
   //     overflow: hidden;
@@ -46,7 +48,7 @@ img {
   color: inherit;
 }
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
   @media screen and (max-width: $telephone) {
     width: 100%;
