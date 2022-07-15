@@ -1,4 +1,8 @@
-@mixin customTransition($first-property, $second-property: false, $third-property: false) {
+@mixin customTransition(
+  $first-property,
+  $second-property: false,
+  $third-property: false
+) {
   $duration: 250ms;
   @if $second-property {
     @if $third-property {
@@ -60,5 +64,13 @@
   } @else {
     @warn '#{ $mode } is undefined keyword.';
     @return $number;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
   }
 }
