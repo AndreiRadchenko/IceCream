@@ -1,8 +1,22 @@
-<section class="about">
+<section class="about section">
   <div class="container">
     <p class="about__pretitle pretitle">Tradition and love</p>
     <h1 class="about__title title">How it's made</h1>
-    <img />
+    <picture class="img cow-picture">
+      <source
+        srcset="images/about/cow-mob.png 1x, images/about/cow-mob-2x.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="images/about/cow-tab.png 1x, images/about/cow-tab-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/about/cow-desk.png 1x, images/about/cow-desk-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="images/about/cow-mob.png" alt="зображення корови" width="280" />
+    </picture>
     <p class="about__bold">
       Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
       cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
@@ -13,14 +27,15 @@
       Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
       suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
       tincidunt. <br />
+      <br />
       Aliquam erat volutpat. Aenean accumsan.
     </p>
     <button class="button about-btn" type="button">
       Read more
-      <!-- <svg class="about-btn__icon" width="4.43" height="8">
+      <svg class="about-btn__icon" width="4.43" height="8">
 									<use
-										href="src/images/symbol-defs.svg#icon-button_svg"
-									></use></svg -->
+										href="./images/symbol-defs.svg#icon-Vector-1"
+									></use></svg
     </button>
   </div>
 </section>
