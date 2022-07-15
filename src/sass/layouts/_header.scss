@@ -1,0 +1,118 @@
+.header {
+    position: relative;
+}
+.container {
+}
+
+.header-mob-nav{
+display: flex;
+ }
+.header--logo {
+padding-top: 8px;
+margin-right: 61px;
+}
+
+.header__list {
+    display: none;
+   /* @media screen and (min-width: $desktop) {
+     display: flex;
+     align-items: center;
+     margin-left: auto;
+     align-items: center;
+     justify-content: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+    }*/
+    
+}
+.menu__item {
+}
+.menu__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 0;
+    color: inherit;
+}
+.mob-open-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:var(--bg-modal-color);
+    width: 100vw;
+    height: 100vh;
+    
+    .mob-container{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding-left: 20px;
+      overflow-y: scroll;
+      position: relative;
+    }
+}
+
+
+.mob-close-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    border: none;
+    background-color: transparent;
+}
+.header-mob-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 22px;
+  padding: 10px 28px;
+  border: 1px transparent;
+  width: 209px;
+  height: 44px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color:var( --accent-main-color);
+  margin-bottom: 32px;
+}
+.input-icon-arrow-right {
+    margin-left: 16px;
+    fill:var(--accent-main-color)
+}
+.mob-menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mob-menu__item {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: calc(18px / 14px);
+display: flex;
+align-items: center;
+color:var(--text-main-color);
+border-bottom: 1px, solid 1px, solid #ffffff;
+}
+.mob-menu__link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 0;
+  color: inherit;
+}
