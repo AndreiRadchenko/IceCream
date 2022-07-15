@@ -1,13 +1,12 @@
 .gallery .container {
   padding: 0;
-  margin: 0 auto;
-  height: 100%;
 }
 
 .gallery {
+  height: 136px;
   background: linear-gradient(
     to bottom,
-    var(--bg-main-color) 15%,
-    var(--bg-secondary-color) 85%
+    var(--bg-main-color) 0 19%,
+    var(--bg-secondary-color) 20% 100%
   );
 }
