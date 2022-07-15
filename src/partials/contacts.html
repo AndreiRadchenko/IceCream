@@ -12,7 +12,7 @@
           <li class="contacts__days">Monday - Friday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
         </ul>
-        <ul>
+        <ul class="contacts__time list">
           <li>
             <a class="tel__link link" href="tel:+610383766284"
               >+61(0) 383 766 284</a
@@ -25,10 +25,8 @@
           </li>
         </ul>
       </li>
-    </ul>
-    <ul class="contacts__list list">
       <li class="contacts__card">
-        <h3 class="contacts__title">food truck</h3>
+        <h3 class="contacts__title contacts__title--special">food truck</h3>
         <p class="contacts__location">Los Angeles</p>
         <p class="contacts__text">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -37,7 +35,7 @@
           <li class="contacts__days">Monday - Friday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
         </ul>
-        <ul>
+        <ul class="contacts__time list">
           <li>
             <a class="tel__link link" href="tel:+610383766284"
               >+61(0) 383 766 284</a
@@ -50,8 +48,6 @@
           </li>
         </ul>
       </li>
-    </ul>
-    <ul class="contacts__list list">
       <li class="contacts__card">
         <h3 class="contacts__title">cafe</h3>
         <p class="contacts__location">New York</p>
@@ -62,7 +58,7 @@
           <li class="contacts__days">Monday - Friday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
         </ul>
-        <ul>
+        <ul class="contacts__time list">
           <li>
             <a class="tel__link link" href="tel:+610383766284"
               >+61(0) 383 766 284</a
@@ -75,12 +71,85 @@
           </li>
         </ul>
       </li>
-    </ul>
-    <button type="button" class="locations__btn" data-modal-open>
+      </ul>
+      <div class="contacts__button">
+    <button type="button" class="locations__btn" locations-modal-open>
       Our Locations
+      <svg class="button__icon" width="3.68" height="8">
+                  <use href="./images/symbol-defs.a8b2e413.svg#icon-Vector-white"></use>
+                </svg>
     </button>
-    <button type="button" class="franchise__btn btn" data-modal-open>
+    <button type="button" class="franchise__btn" franchise-modal-open>
       Franchise
+      <svg class="button__icon" width="4.28" height="8">
+                  <use href="./images/symbol-defs.a8b2e413.svg#icon-Vector-red"></use>
+                </svg>
     </button>
+      </div>
+  </ul>
   </div>
 </section>
+
+<div class="backdrop is-hidden" locations-modal>
+      <div class="locations-modal">
+        <button type="button" class="locations-close-btn" locations-modal-close>
+          <svg class="close-btn" width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+            <p class="locations-title">Taste now</p>
+            <ul class="locations-list list">
+              <li class="locations-item">
+                <a
+                  class="locations-link link"
+                  href="https://goo.gl/maps/CtsjPDixrQZsP7Wj9"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >Chicago</a
+                >
+              </li>
+              <li class="locations-item">
+                <a
+                  class="locations-link link"
+                  href="https://goo.gl/maps/dvuKHNaKrBnXkXQ86"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >Los Angeles</a
+                >
+              </li>
+              <li class="locations-item">
+                <a
+                  class="locations-link link"
+                  href="https://goo.gl/maps/6WFamfhr5zxUGvQZ7"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >New York</a
+                >
+              </li>
+            </ul>
+      </div>
+</div>
+<div class="backdrop is-hidden" franchise-modal>
+      <div class="franchise-modal">
+        <button type="button" class="franchise-close-btn" franchise-modal-close>
+          <svg class="close-btn" width="14" height="14">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+            <p class="franchise-title">Do you dream about your own cafe?</p>
+         <div class="subscription">
+            <p class="subscription__text">Ask us about franchise</p>
+            <form class="subscription__details">
+              <input class="subscription__input" type="email" name="email" placeholder="E-mail" />
+              <button class="subscription__btn btn" type="submit">
+                Now
+              </button>
+            </form>
+          </div>
+        </div>
+            </ul>
+      </div>
+</div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
