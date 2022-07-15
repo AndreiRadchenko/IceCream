@@ -92,10 +92,5 @@
   display: inline-block;
   width: 8px;
   height: 16px;
-  stroke: var(--accent-main-color);
-  transition: fill 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    stroke: var(--text-main-color);
-  }
+  --arrow-color: currentColor;
 }
