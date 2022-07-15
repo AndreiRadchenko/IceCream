@@ -44,16 +44,52 @@
   padding-right: 40px;
 }
 
-.products-list__item:first-child {
+
+.products__ice-cream {
   background-color: #ffb8ca;
 }
 
-.products-list__item:nth-child(2) {
+.products__ice-cream::before {
+  content: "";
+  display: block;
+  background-image: url('../images/products/mob/icecream-mob.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  //background-position: top 50%;
+  //width: 280px;
+  //height: 280px;
+  //transform: translate(-100%);  
+}
+
+
+.products__ice-coffee {
   background-color: #f0d1a5;
 }
 
-.products-list__item:last-child {
+.products__ice-coffee__box::before {
+  content: '';
+  display: inline-block;
+  background-image: url('../images/products/mob/icecoffee-mob.png');
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 280px;
+  transform: translateY(50%);  
+  
+}
+
+.products__milkshakes {
   background-color: #c2e297;
+}
+
+.products__milkshakes__box::before {
+  content: '';
+  display: inline-block;
+  background-image: url('../images/products/mob/milkshake-mob.png');
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 280px;
+  transform: translateY(50%);  
+  
 }
 
 .products-list__title {
