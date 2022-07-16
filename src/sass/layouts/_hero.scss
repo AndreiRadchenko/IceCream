@@ -1,5 +1,4 @@
 .hero__container {
-  outline: 1px solid red;
   position: relative;
   z-index: 1;
   font-family: 'Titan One', cursive;
@@ -96,9 +95,43 @@
       height: 557px;
     }
   }
+  &__image-girl {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      right: 32px;
+      z-index: -1;
+      background-repeat: no-repeat;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 0px;
+      right: 16px;
+      width: 304;
+      height: 241px;
+    }
+  }
+  &__image-milk {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      bottom: 16px;
+      left: 32px;
+      z-index: -1;
+      background-repeat: no-repeat;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 60px;
+      left: 16px;
+      width: 213;
+      height: 216px;
+    }
+  }
   &__elipse {
     position: absolute;
-    z-index: -3;
+    z-index: -2;
     left: 36px;
     top: 83px;
     width: 346px;
