@@ -123,49 +123,54 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  margin-bottom: 32px;
-  // position: relative;
-  // &::after {
-  //   content: '...';
-  //   position: absolute;
-  //   left: 50%;
-  //   bottom: -20px;
-  //   width: 6px;
-  //   height: 6px;
-  //   background-color: #ffffff;
-  //   border-radius: 50%;
-  //   transform: translateX(-50%);
-  // }
-}
-
-.products-list__circle {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6px;
-  height: 6px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
+  margin-bottom: 70px;
   position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    width: 6px;
-    height: 6px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-  }
   &::after {
     content: '';
-    position: absolute;
-    left: 10px;
-    width: 6px;
+    display: block;
+    width: 26px;
     height: 6px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
+    background-image: url('../images/products/circles.png');
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/circles-2x.png');
+    }
   }
 }
+
+// .products-list__circle {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 6px;
+//   height: 6px;
+//   background-color: #FFFFFF;
+//   border-radius: 50%;
+//   position: relative;
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     left: -10px;
+//     width: 6px;
+//     height: 6px;
+//     background-color: #FFFFFF;
+//     border-radius: 50%;
+//   }
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     left: 10px;
+//     width: 6px;
+//     height: 6px;
+//     background-color: #FFFFFF;
+//     border-radius: 50%;
+//   }
+// }
 
 .products-list__text {
   font-family: 'DM Sans';
@@ -175,7 +180,6 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  margin-top: 32px;
   margin-bottom: 32px;
 }
 
