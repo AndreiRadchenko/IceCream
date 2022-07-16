@@ -26,7 +26,7 @@
     </a>
    <!-- <ul class="menu__list">
       <li class="menu__item">
-        <a href="" class="menu__link">Home</a>
+        <a href="" class="menu__link current">Home</a>
       </li>
       <li class="menu__item">
         <a href="" class="menu__link">About us</a>
@@ -43,15 +43,16 @@
     </ul>-->
 
     <button type="button"class="mob-open-btn"><svg width="20" height="12"><use class="icon-open" href="images/symbol-defs.svg#icon-Burger"></use></svg></button>
+    <button type="button" class="buy-btn" buy-modal-open>Buy now<svg class="input-icon-arrow-right" width="15" height="15"><use href="images/symbol-defs.svg#icon-arrow-right"></use></svg></button>
   </div>
   <div class="mobile-menu is-hidden">
     <div class="mob-container">
     <button type="button"class="mob-close-btn"><svg width="14" height="14"><use href="images/symbol-defs.svg#icon-close"></use></svg></button>
-    <button type="button" class="header-mob-btn">Buy now<svg class="input-icon-arrow-right" width="15" height="15"><use href="images/symbol-defs.svg#icon-arrow-right"></use></svg></button>
+    <button type="button" class="buy-modal-open" buy-modal-open>Buy now<svg class="input-icon-arrow-right" width="15" height="15"><use href="images/symbol-defs.svg#icon-arrow-right"></use></svg></button>
     <ul class="mob-menu__list">
       <div style="height: 1px;background-color:#E18298;"></div>
       <li class="mob-menu__item">
-        <a href="#header" class="mob-menu__link">Home</a>
+        <a href="#header" class="mob-menu__link current">Home</a>
       </li>
       <div style="height: 1px;background-color:#E18298;"></div>
       <li class="mob-menu__item">
@@ -71,5 +72,26 @@
       </li>
       <div style="height: 1px;background-color:#E18298;"></div>
     </ul>
+  </div>
+
+ <div class="buy-backdrop is-hidden" buy-modal>
+    <div class="buy-modal">
+      <button type="button"class="buy-close-btn" buy-modal-close><svg class="close-btn-icon" width="18" height="18"><use href="images/symbol-defs.svg#icon-close"></use></svg></button>
+      <p class="buy-modal-title">MAKE YOUR CHOICE</p>
+      <div class="buy-modal-field">
+        <label for="user-name" class="buy-modal-label">name</label>
+        <div class="input-shell">
+          <input type="text" class="buy-modal-input" name="user-name" id="user-name"/>
+          <svg class="buy-modal-icon" width="18" height="18"><use href="images/symbol-defs.svg#icon-user"></use></svg>
+        </div>
+       </div>
+      <div class="buy-modal-field">
+        <label for="user-tel" class="buy-modal-label">phone</label> 
+       <div class="input-shell">
+         <input type="tel" class="buy-modal-input" name="user-tel" id="user-tel"/><svg class="buy-modal-icon" width="18" height="18"><use href="images/symbol-defs.svg#icon-phone"></use></svg>
+       </div>
+       </div>
+       <p class="input-modal-text">please enter your name & phone number and we will call you back</p>
+    </div>
   </div>
 </header>
