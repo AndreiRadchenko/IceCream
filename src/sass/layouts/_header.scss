@@ -1,22 +1,25 @@
 .header {
-    position: absolute;
-    background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }
-.current{
-    color: var(    --accent-main-color);
+.current {
+  color: var(--accent-main-color);
 }
-.header-mob-nav{
-    position: relative;
-    display: flex;
- }
+.header-mob-nav {
+  position: relative;
+  display: flex;
+}
 .header--logo {
-padding-top: 8px;
-margin-right: 61px;
+  padding-top: 8px;
+  margin-right: 61px;
 }
 
 .header__list {
-    display: none;
-   /* @media screen and (min-width: $desktop) {
+  display: none;
+  /* @media screen and (min-width: $desktop) {
      display: flex;
      align-items: center;
      margin-left: auto;
@@ -26,79 +29,73 @@ margin-right: 61px;
      margin: 0;
      padding: 0;
     }*/
-    
 }
 
 .menu__link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 15px 0;
-    color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 0;
+  color: inherit;
 }
 
-.buy-btn{
-    display: none;
-    @media screen and (min-width: $tablet){
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 22px;
-  padding: 10px 28px;
-  border: 1px transparent;
-  width: 209px;
-  height: 44px;
-  margin-left: 20px;
-  margin-right: 0 auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color:var( --accent-main-color);
-    }
+.buy-btn {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 22px;
+    padding: 10px 28px;
+    border: 1px transparent;
+    width: 209px;
+    height: 44px;
+    margin-left: 20px;
+    margin-right: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: var(--accent-main-color);
+  }
 }
- 
-
-
-
 
 .mob-open-btn {
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 10px;
-    border: none;
-    background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
 }
 
 .mobile-menu {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:var(--bg-modal-color);
-    width: 100vw;
-    height: 100vh;
-    
-    .mob-container{
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      padding-right: 20px;
-      overflow-y: scroll;
-      position: relative;
-    }
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-modal-color);
+  width: 100vw;
+  height: 100vh;
+
+  .mob-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 20px;
+    overflow-y: scroll;
+    position: relative;
+  }
 }
 
-
 .mob-close-btn {
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 20px;
-    left: 20px;
-    margin-bottom: 26px;
-    border: none;
-    background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 20px;
+  left: 20px;
+  margin-bottom: 26px;
+  border: none;
+  background-color: transparent;
 }
 .buy-modal-open {
   display: flex;
@@ -115,29 +112,27 @@ margin-right: 61px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color:var( --accent-main-color);
-  
+  color: var(--accent-main-color);
 }
 .input-icon-arrow-right {
-    margin-left: 16px;
-    fill:var(--accent-main-color)
+  margin-left: 16px;
+  fill: var(--accent-main-color);
 }
 .mob-menu__list {
-    list-style: none;
-    margin-left: 20px;
-    padding: 0;
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
 }
 .mob-menu__item {
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: calc(18 / 14);
-display: flex;
-align-items: center;
-color:var(--text-main-color);
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  color: var(--text-main-color);
 }
-
 
 .mob-menu__link {
   display: inline-block;
@@ -147,141 +142,139 @@ color:var(--text-main-color);
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .buy-backdrop {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .buy-backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-  .buy-modal {
-    width: 250px;
-    height: auto;
-    border-radius: 4px;
-    background-color: var(--bg-green-color);
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 1px 3px rgba(0, 0, 0, 0.12);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px 39px 40px 41px;
-  }
-
-  .buy-close-btn {
-    width: 30px;
-    height: 30px;
-    border: 1px transparent;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    cursor: pointer;
-    background-color: transparent;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .buy-modal-title{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: var(--text-main-color);
-    text-align: center;
-  }
-
-  .buy-modal-field{
-    position: relative;
-    margin-bottom: 10px;
-  
-  }
-  .input-shell{
-     position: relative;
-  }
-  
-  .buy-modal-input{
-    width: 100%;
-    height: 40px;
-    padding-left: 42px;
-    
-    border: 1px solid var(--accent-secondary-color);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.buy-modal {
+  width: 250px;
+  height: auto;
   border-radius: 4px;
-  .input-shell:hover &{
+  background-color: var(--bg-green-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 39px 40px 41px;
+}
+
+.buy-close-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px transparent;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-modal-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--text-main-color);
+  text-align: center;
+}
+
+.buy-modal-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+.input-shell {
+  position: relative;
+}
+
+.buy-modal-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid var(--accent-secondary-color);
+  border-radius: 4px;
+  .input-shell:hover & {
     border-color: var(--accent-main-color);
     transition-property: border-color;
-    transition-duration: 250ms;;
+    transition-duration: 250ms;
     transition-duration: 250ms;
   }
-   &:focus{
+  &:focus {
     border-color: var(--accent-color);
     outline: none;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  }
-  .buy-modal-label{
+}
+.buy-modal-label {
   display: block;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: #757575;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.buy-modal-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.buy-modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--bg-green-color);
+  .input-shell:hover &,
+  .modal-input:focus ~ & {
+    fill: var(--bg-modal-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .buy-modal-text{
-    width: 100%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-    padding: 12px 16px;
-      font-size: 12px;
-      line-height: 1.16;
-      letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
-    
-  }
-  .buy-modal-icon{
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: var(--bg-green-color);
-    .input-shell:hover  &,
-    .modal-input:focus ~ &{
-     fill: var(--bg-modal-color);
-    
-     transition-property: color;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-    }
-  }
-  .input-modal-text{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color: var(--text-main-color);
-    text-align: center;
-  }
+}
+.input-modal-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--text-main-color);
+  text-align: center;
+}
