@@ -3,11 +3,11 @@
     <h1 class="visually-hidden">hidden</h1>
     <ul class="contacts__list list">
       <li class="contacts__card">
-        <h3 class="contacts__title">cafe</h3>
-        <p class="contacts__location">Chicago</p>
-        <p class="contacts__text">
+        <p class="contacts__title">cafe</p>
+        <div class="contacts__location">Chicago</div>
+        <div class="contacts__text">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
-        </p>
+        </div>
         <ul class="contacts__work list">
           <li class="contacts__days">Monday - Friday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
@@ -26,11 +26,11 @@
         </ul>
       </li>
       <li class="contacts__card">
-        <h3 class="contacts__title contacts__title--special">food truck</h3>
-        <p class="contacts__location">Los Angeles</p>
-        <p class="contacts__text">
+        <p class="contacts__title contacts__title--special">food truck</p>
+        <div class="contacts__location">Los Angeles</div>
+        <div class="contacts__text">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
-        </p>
+        </div>
         <ul class="contacts__work list">
           <li class="contacts__days">Monday - Friday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
@@ -49,11 +49,11 @@
         </ul>
       </li>
       <li class="contacts__card">
-        <h3 class="contacts__title">cafe</h3>
-        <p class="contacts__location">New York</p>
-        <p class="contacts__text">
+        <p class="contacts__title">cafe</p>
+        <div class="contacts__location">New York</div>
+        <div class="contacts__text">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
-        </p>
+        </div>
         <ul class="contacts__work list">
           <li class="contacts__days">Monday - Friday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
@@ -71,87 +71,84 @@
           </li>
         </ul>
       </li>
-      </ul>
-      <div class="contacts__button">
-    <button type="button" class="locations__btn" locations-modal-open>
-      Our Locations
-      <svg class="button__icon" width="8" height="16">
-                  <use href="images/symbol-defs.svg#icon-Vector-1"></use>
-                </svg>
-    </button>
-    <button type="button" class="franchise__btn" franchise-modal-open>
-      Franchise
-      <svg class="button__icon" width="8" height="16">
-                  <use href="images/symbol-defs.svg#icon-Vector-1"></use>
-                </svg>
-    </button>
-      </div>
-  </ul>
+    </ul>
+    <div class="contacts__button">
+      <button type="button" class="locations__btn" locations-modal-open>
+        Our Locations
+        <svg class="button__icon" width="8" height="16">
+          <use href="images/symbol-defs.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+      <button type="button" class="franchise__btn" franchise-modal-open>
+        Franchise
+        <svg class="button__icon" width="8" height="16">
+          <use href="images/symbol-defs.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+    </div>
   </div>
-<!-- </section> -->
+</section>
+
+<!--modal windows-->
 
 <div class="backdrop is-hidden" locations-modal>
-      <div class="locations-modal">
-        <button type="button" class="locations-close-btn" locations-modal-close>
-          <svg class="close-btn" width="14" height="14">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-            <p class="locations-title">Taste now</p>
-            <ul class="locations-list list">
-              <li class="locations-item">
-                <a
-                  class="locations-link link"
-                  href="https://goo.gl/maps/CtsjPDixrQZsP7Wj9"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >Chicago</a
-                >
-              </li>
-              <li class="locations-item">
-                <a
-                  class="locations-link link"
-                  href="https://goo.gl/maps/dvuKHNaKrBnXkXQ86"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >Los Angeles</a
-                >
-              </li>
-              <li class="locations-item">
-                <a
-                  class="locations-link link"
-                  href="https://goo.gl/maps/6WFamfhr5zxUGvQZ7"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >New York</a
-                >
-              </li>
-            </ul>
-      </div>
+  <div class="locations-modal">
+    <button type="button" class="locations-close-btn" locations-modal-close>
+      <svg class="close-btn" width="14" height="14">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="locations-title">Taste now</p>
+    <ul class="locations-list list">
+      <li class="locations-item">
+        <a
+          class="locations-link link"
+          href="https://goo.gl/maps/CtsjPDixrQZsP7Wj9"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Chicago</a
+        >
+      </li>
+      <li class="locations-item">
+        <a
+          class="locations-link link"
+          href="https://goo.gl/maps/dvuKHNaKrBnXkXQ86"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Los Angeles</a
+        >
+      </li>
+      <li class="locations-item">
+        <a
+          class="locations-link link"
+          href="https://goo.gl/maps/6WFamfhr5zxUGvQZ7"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >New York</a
+        >
+      </li>
+    </ul>
+  </div>
 </div>
 <div class="backdrop is-hidden" franchise-modal>
-      <div class="franchise-modal">
-        <button type="button" class="franchise-close-btn" franchise-modal-close>
-          <svg class="close-btn" width="14" height="14">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-            <p class="franchise-title">Do you dream about your own cafe?</p>
-         <div class="subscription">
-            <p class="subscription__text">Ask us about franchise</p>
-            <form class="subscription__details">
-              <input class="subscription__input" type="email" name="email" placeholder="E-mail" />
-              <button class="subscription__btn btn" type="submit">
-                Now
-              </button>
-            </form>
-          </div>
-        </div>
-            </ul>
-      </div>
+  <div class="franchise-modal">
+    <button type="button" class="franchise-close-btn" franchise-modal-close>
+      <svg class="close-btn" width="14" height="14">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="franchise-title">Do you dream about your own cafe?</p>
+    <div class="subscription">
+      <p class="subscription__text">Ask us about franchise</p>
+      <form class="subscription__details">
+        <input
+          class="subscription__input"
+          type="email"
+          name="email"
+          placeholder="E-mail"
+        />
+        <button class="subscription__btn btn" type="submit">Now</button>
+      </form>
+    </div>
+  </div>
 </div>
-    <!-- <script src="./js/modal.js"></script>
-  </body>
-</html>
-  <div class="container"></div> -->
-</section>
