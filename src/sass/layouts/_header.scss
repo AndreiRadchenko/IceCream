@@ -16,6 +16,10 @@
 .header--logo {
   padding-top: 8px;
   margin-right: 61px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-left: 16px;
+  }
 }
 
 .header__list {
@@ -57,6 +61,10 @@
     font-size: 16px;
     line-height: 1.31;
     color: var(--accent-main-color);
+    margin-top: 32px;
+    margin-right: 16px;
+    margin-left: 32px;
+
   }
 }
 
@@ -67,6 +75,9 @@
   margin-top: 10px;
   border: none;
   background-color: transparent;
+  @media screen and (min-width: $tablet) {
+    padding-top: 22px;
+  }
 }
 
 .mobile-menu {
