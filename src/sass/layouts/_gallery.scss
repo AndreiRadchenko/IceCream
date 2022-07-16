@@ -1,5 +1,8 @@
 .gallery .container {
   padding: 0;
+  @media screen and (min-width: $desktop) {
+    padding: 0 94px;
+  }
 }
 
 .gallery {
@@ -9,4 +12,20 @@
     var(--bg-main-color) 0 19%,
     var(--bg-secondary-color) 20% 100%
   );
+  @media screen and (min-width: $tablet) {
+    height: 327px;
+    background: linear-gradient(
+      to bottom,
+      var(--bg-main-color) 0 50%,
+      var(--bg-secondary-color) 51% 100%
+    );
+  }
+  @media screen and (min-width: $desktop) {
+    height: 430px;
+    background: linear-gradient(
+      to bottom,
+      var(--bg-main-color) 0 20%,
+      var(--bg-secondary-color) 21% 100%
+    );
+  }
 }
