@@ -9,9 +9,10 @@
 .current {
   color: var(--accent-main-color);
 }
-.header-mob-nav {
+.header-nav {
   position: relative;
   display: flex;
+  justify-content: space-around;
 }
 .header--logo {
   padding-top: 8px;
@@ -20,11 +21,16 @@
     padding-top: 32px;
     padding-left: 16px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 37px;
+    padding-left: 0px;
+    margin-right: 0;
+  }
 }
 
 .header__list {
   display: none;
-  /* @media screen and (min-width: $desktop) {
+   @media screen and (min-width: $desktop) {
      display: flex;
      align-items: center;
      margin-left: auto;
@@ -33,7 +39,7 @@
      list-style: none;
      margin: 0;
      padding: 0;
-    }*/
+    }
 }
 
 .menu__link {
@@ -55,16 +61,18 @@
     border: 1px transparent;
     width: 209px;
     height: 44px;
-    margin-left: 20px;
     margin-right: 0 auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     color: var(--accent-main-color);
     margin-top: 32px;
-    margin-right: 16px;
+    margin-right: 32px;
     margin-left: 32px;
-
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 40px;
+    margin-right: 0;
   }
 }
 
@@ -78,6 +86,9 @@
   @media screen and (min-width: $tablet) {
     padding-top: 22px;
   }
+  @media screen and (min-width: $desktop) {
+   display: none;
+  }
 }
 
 .mobile-menu {
@@ -86,8 +97,24 @@
   top: 0;
   left: 0;
   background-color: var(--bg-modal-color);
-  width: 100vw;
+  width: 35vw;
   height: 100vh;
+  transition: var(--timing-function);
+  transform: translateX(0);
+  transition: transform linear;
+  &.active {
+    transform: translateX(100%);
+  }
+  &.active >.mob-open-btn{
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    left: 495px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+
 
   .mob-container {
     display: flex;
@@ -125,6 +152,7 @@
   font-size: 16px;
   line-height: 1.31;
   color: var(--accent-main-color);
+  
 }
 .input-icon-arrow-right {
   margin-left: 16px;
@@ -187,7 +215,13 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px 39px 40px 41px;
+  padding: 40px 40px 40px 40px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 500px;
+  }
 }
 
 .buy-close-btn {
@@ -290,4 +324,24 @@
   text-align: left;
   color: var(--text-main-color);
   text-align: center;
+}
+
+.menu__list {
+  display: none;
+  @media screen and (min-width: $desktop) {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  padding-top: 22px;
+}
+}
+.menu__item {
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: calc(21 / 16);
+color: var(--text-main-color);
+justify-content: center;
+align-items: center;
 }
