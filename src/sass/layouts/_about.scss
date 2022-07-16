@@ -1,13 +1,16 @@
 .about {
   background-color: var(--bg-main-color);
-  background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
-  // @include retina {
-  //   background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
-  // }
-  background-repeat: no-repeat;
-  background-position: 44% 70%;
-  background-size: auto;
 }
+.about .container {
+  background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
+  @include retina {
+    background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+  }
+  background-repeat: no-repeat;
+  background-position: 46% 75%;
+  background-size: 280px 133px;
+}
+
 .about__pretitle {
   font-family: 'Titan One';
   font-style: normal;
@@ -78,7 +81,7 @@
   background: var(--bg-secondary-color);
   stroke: var(--accent-main-color);
   transition: color 250ms var(--timing-function),
-    fill 250ms var(--timing-function),
+    stroke 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
   &:hover,
   &:focus {
@@ -92,10 +95,5 @@
   display: inline-block;
   width: 8px;
   height: 16px;
-  stroke: var(--accent-main-color);
-  transition: fill 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    stroke: var(--text-main-color);
-  }
+  --arrow-color: currentColor;
 }

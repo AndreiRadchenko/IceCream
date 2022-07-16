@@ -56,10 +56,11 @@ img {
   }
   width: $telephone;
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    width: $tablet;
+    padding: 0 16px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    width: $desktop;
   }
 }
 .section {
