@@ -1,15 +1,20 @@
 .about {
   @extend .section;
   background-color: var(--bg-main-color);
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 20px;
+  }
 }
 .about .container {
-  background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
-  @include retina {
-    background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
+    @include retina {
+      background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: 46% 77%;
+    background-size: 280px 133px;
   }
-  background-repeat: no-repeat;
-  background-position: 46% 77%;
-  background-size: 280px 133px;
   @media screen and (min-width: $tablet) {
     background-image: none;
     padding-right: 32px;
@@ -21,8 +26,8 @@
       background-image: url('../images/about/IceCream/sectionbg-2x.png');
     }
     background-repeat: no-repeat;
-    background-size: 1200px 521px;
-    padding-bottom: 20px;
+    background-position: 46% 115%;
+    background-size: 100%;
   }
 }
 .about__content {
