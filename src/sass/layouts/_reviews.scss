@@ -1,10 +1,27 @@
 .reviews--margin {
-  margin-top: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.reviews__img-wrap {
+  display: flex;
+  justify-content: center;
 }
 .reviews__img {
   border-radius: 50%;
   margin-bottom: 32px;
-  margin-left: 35%;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
 }
 .reviews__text-wrap {
   max-width: 320px;
@@ -13,6 +30,17 @@
   padding: 43px 60px 23px;
   text-align: center;
   margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 37px 53px 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 968px;
+    padding: 47px 109px 39px;
+    margin: 0 auto 16px;
+  }
 }
 .reviews__text {
   font-family: 'DM Sans';
@@ -26,11 +54,33 @@
     transparent 29px,
     #e1e1e1 30px
   );
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 28px,
+      #e1e1e1 29px
+    );
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 186%;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 27px,
+      #e1e1e1 29px
+    );
+  }
 }
 .elipse-red {
   fill: red;
 }
-.ellipse-red-wrap {
+.reviews__ellipse-wrap {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
@@ -46,17 +96,22 @@
   text-align: center;
   color: #000000;
   margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
 }
 .icon-quote {
   background-image: url('/src/images/reviews/quote.svg');
   background-repeat: no-repeat;
   background-position: 22% 12%;
-}
-.slider {
-  position: relative;
-}
-.slider.slick-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
+  @media screen and (min-width: $tablet) {
+    background-position: 2% 18%;
+  }
+  @media screen and (min-width: $desktop) {
+    background-position: 8% 30%;
+  }
 }
