@@ -34,7 +34,7 @@
 .elipse-red {
   fill: red;
 }
-.ellipse-red-wrap {
+.reviews__ellipse-wrap {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
@@ -55,12 +55,4 @@
   background-image: url('/src/images/reviews/quote.svg');
   background-repeat: no-repeat;
   background-position: 22% 12%;
-}
-.slider {
-  position: relative;
-}
-.slider.slick-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
 }
