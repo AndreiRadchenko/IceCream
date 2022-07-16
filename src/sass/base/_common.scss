@@ -18,6 +18,7 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
   font-weight: 400;
+  position: relative;
 
   //   &.modal-open {
   //     overflow: hidden;
@@ -55,10 +56,11 @@ img {
   }
   width: $telephone;
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    width: $tablet;
+    padding: 0 16px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    width: $desktop;
   }
 }
 .section {
