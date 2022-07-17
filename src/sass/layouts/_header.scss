@@ -15,7 +15,7 @@
     background-color: rgba(209, 130, 200, 0.315);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    }
+  }
 }
 
 .header-nav {
@@ -56,7 +56,8 @@
   text-decoration: none;
   padding: 15px 0;
   color: inherit;
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     color: var(--accent-main-color);
     cursor: pointer;
   }
@@ -83,10 +84,10 @@
     margin-top: 32px;
     margin-right: 32px;
     margin-left: 32px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: $desktop) {
     margin-top: 40px;
@@ -119,7 +120,7 @@
   height: 100vh;
   transform: translateX(0);
   transition: transform 250ms var(--timing-function);
-  
+
   &.is-hidden {
     transform: translateX(100%);
   }
@@ -197,11 +198,12 @@
   text-decoration: none;
   padding: 15px 0;
   color: inherit;
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     color: var(--accent-main-color);
   }
 }
-.style-line{
+.style-line {
   height: 1px;
   background-color: var(--accent-secondary-color);
   width: 100%;
@@ -214,8 +216,8 @@
 }
 
 .buy-backdrop {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: 50;
   top: 0;
