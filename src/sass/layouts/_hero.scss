@@ -216,6 +216,8 @@
     line-height: 1.25;
   }
   @media screen and (min-width: $desktop) {
+    top: 152px;
+    right: 16px;
     font-size: 14px;
     line-height: 1.28;
   }
@@ -230,7 +232,8 @@
 }
 .hero-contacts__item::before {
   content: '';
-  display: flex;
+  display: block;
+  // background-image: url('images/hero/tab/circle-tab.png');
 }
 .hero-contacts__item-count {
   font-family: 'Titan One', cursive;
@@ -241,4 +244,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-main-color);
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
