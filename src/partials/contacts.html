@@ -10,9 +10,11 @@
         </div>
         <ul class="contacts__work list">
           <li class="contacts__days">Monday - Friday</li>
+          <li class="contacts__time">06:00 AM - 10:00 PM</li>
+          <li class="contacts__days">Saturday - Sunday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
         </ul>
-        <ul class="contacts__time list">
+        <ul class="contacts__info list">
           <li>
             <a class="tel__link link" href="tel:+610383766284"
               >+61(0) 383 766 284</a
@@ -33,6 +35,8 @@
         </div>
         <ul class="contacts__work list">
           <li class="contacts__days">Monday - Friday</li>
+          <li class="contacts__time">06:00 AM - 10:00 PM</li>
+          <li class="contacts__days">Saturday - Sunday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
         </ul>
         <ul class="contacts__time list">
@@ -56,6 +60,8 @@
         </div>
         <ul class="contacts__work list">
           <li class="contacts__days">Monday - Friday</li>
+          <li class="contacts__time">06:00 AM - 10:00 PM</li>
+          <li class="contacts__days">Saturday - Sunday</li>
           <li class="contacts__time">08:00 AM - 16:00 PM</li>
         </ul>
         <ul class="contacts__time list">
@@ -73,13 +79,13 @@
       </li>
     </ul>
     <div class="contacts__button">
-      <button type="button" class="locations__btn" locations-modal-open>
+      <button type="button" class="locations__btn" data-locations-modal-open>
         Our Locations
         <svg class="button__icon" width="8" height="16">
           <use href="images/symbol-defs.svg#icon-Vector-1"></use>
         </svg>
       </button>
-      <button type="button" class="franchise__btn" franchise-modal-open>
+      <button type="button" class="franchise__btn" data-franchise-modal-open>
         Franchise
         <svg class="button__icon" width="8" height="16">
           <use href="images/symbol-defs.svg#icon-Vector-1"></use>
@@ -91,9 +97,13 @@
 
 <!--modal windows-->
 
-<div class="backdrop is-hidden" locations-modal>
+<div class="backdrop is-hidden" data-locations-modal>
   <div class="locations-modal">
-    <button type="button" class="locations-close-btn" locations-modal-close>
+    <button
+      type="button"
+      class="locations-close-btn"
+      data-locations-modal-close
+    >
       <svg class="close-btn" width="14" height="14">
         <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
@@ -130,9 +140,13 @@
     </ul>
   </div>
 </div>
-<div class="backdrop is-hidden" franchise-modal>
+<div class="backdrop is-hidden" data-franchise-modal>
   <div class="franchise-modal">
-    <button type="button" class="franchise-close-btn" franchise-modal-close>
+    <button
+      type="button"
+      class="franchise-close-btn"
+      data-franchise-modal-close
+    >
       <svg class="close-btn" width="14" height="14">
         <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
