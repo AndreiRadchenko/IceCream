@@ -28,6 +28,7 @@
 }
 .header--logo {
   padding-top: 8px;
+  padding-bottom: 8px;
   margin-right: 61px;
   @media screen and (min-width: $tablet) {
     padding-top: 26px;
@@ -103,6 +104,7 @@
   align-items: center;
   margin-left: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
   background-color: transparent;
   @media screen and (min-width: $tablet) {
@@ -122,7 +124,8 @@
   width: 250px;
   height: 100vh;
   transform: translateX(0);
-  transition: transform 250ms var(--timing-function);
+  transition: opacity 250ms, visibility 250ms;
+
   
   &.is-hidden {
     transform: translateX(100%);
@@ -229,11 +232,13 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opasity 250ms, visibility 250ms;
 }
 .buy-backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transform: translate (-50%, -50%) scale 0;
 }
 .buy-modal {
   width: 250px;
@@ -248,6 +253,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 40px 40px 40px;
+  
   @media screen and (min-width: $tablet) {
     width: 400px;
   }
