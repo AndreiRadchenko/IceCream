@@ -1,67 +1,218 @@
-.hero {
+.hero__container {
+  outline: 1px solid red;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   font-family: 'Titan One', cursive;
   padding-top: 194px;
   padding-bottom: 158px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 102px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 147px;
+    padding-bottom: 60px;
+  }
+}
+.hero {
   background-color: var(--bg-pink-color);
-
+  overflow: hidden;
   &__title {
     max-width: 218px;
     margin-bottom: 20px;
     // @include font(400, 26px, 1.16, 0.04em);
     font-weight: 400;
     font-size: 26px;
-    line-height: 1.16;
+    line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--bg-secondary-color);
+    @media screen and (min-width: $tablet) {
+      max-width: 162px;
+      font-size: 22px;
+      line-height: 1.13;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 277px;
+      margin-bottom: 24px;
+      font-size: 38px;
+      line-height: 1.14;
+    }
+    &--accent {
+      // @include font(400, 48px, 0.96, 0.04em);
+      display: block;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 0.96;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-main-color);
+      @media screen and (min-width: $tablet) {
+        font-size: 34px;
+        line-height: 0.88;
+      }
+      @media screen and (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 0.87;
+      }
+    }
+  }
+  &__link {
+    @extend .link;
+    font-family: 'DM Sans', sans-serif;
+    // @include font(400, 8px, 1.25, 0.04em);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    background-color: var(--accent-main-color);
+    color: var(--text-main-color);
+    padding: 7px 13px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    &--reserve {
+      background-color: var(--bg-secondary-color);
+      color: var(--accent-main-color);
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    height: 410px;
+    @media screen and (min-width: $tablet) {
+      top: 80px;
+      left: 322px;
+      width: 143px;
+      height: 336px;
+    }
+    @media screen and (min-width: $desktop) {
+      top: 108px;
+      left: 636px;
+      width: 236;
+      height: 557px;
+    }
+  }
+  &__image-girl {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      right: 32px;
+      z-index: -1;
+      background-repeat: no-repeat;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 0px;
+      right: 16px;
+      width: 304;
+      height: 241px;
+    }
+  }
+  // &__image-milk {
+  //   display: none;
+  //   @media screen and (min-width: $tablet) {
+  //     display: block;
+  //     position: absolute;
+  //     bottom: 16px;
+  //     left: 32px;
+  //     z-index: -1;
+  //     background-repeat: no-repeat;
+  //   }
+  //   @media screen and (min-width: $desktop) {
+  //     bottom: 60px;
+  //     left: 16px;
+  //     width: 213;
+  //     height: 216px;
+  //   }
+  // }
+  &__elipse {
+    position: absolute;
+    z-index: -2;
+    left: 36px;
+    top: 83px;
+    width: 346px;
+    height: 333px;
+    background-color: var(--accent-secondary-color);
+    border-radius: 50%;
+    @media screen and (min-width: $tablet) {
+      width: 335px;
+      height: 344px;
+      top: 43px;
+      left: 248px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 534px;
+      height: 534px;
+      top: 54px;
+      left: 517px;
+    }
   }
 }
-.hero__title--accent {
-  // @include font(400, 48px, 0.96, 0.04em);
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 0.96;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--accent-main-color);
-}
-
-.hero__elipse {
-  position: absolute;
-  z-index: -3;
-  left: 36px;
-  top: 83px;
-  width: 346px;
-  height: 344px;
-  background-color: var(--accent-secondary-color);
-  border-radius: 50%;
-}
-
-.hero__image {
-  position: absolute;
-  top: 92px;
-  left: 117px;
-  z-index: -3;
-  background-repeat: no-repeat;
-}
-
-.btn {
-  font-family: 'DM Sans', sans-serif;
-  // @include font(400, 8px, 1.25, 0.04em);
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  background-color: var(--accent-main-color);
-  color: var(--text-main-color);
-  padding: 7px 13px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.btn--reverce {
-  background-color: var(--bg-secondary-color);
-  color: var(--accent-main-color);
+.about-short {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 40px;
+  }
+  &__image {
+    width: 152px;
+    height: 154px;
+    @media screen and (min-width: $desktop) {
+      width: 213px;
+      height: 216px;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--text-main-color);
+    width: 114px;
+    margin-bottom: 7px;
+    @media screen and (min-width: $desktop) {
+      width: 200px;
+      font-size: 14px;
+      line-height: 1.42;
+      margin-bottom: 24px;
+    }
+  }
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    color: var(--accent-main-color);
+    padding: 0;
+    background-color: var(--text-main-color);
+    @media screen and (min-width: $desktop) {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
 }
