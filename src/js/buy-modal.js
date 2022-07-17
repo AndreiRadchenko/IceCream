@@ -13,7 +13,7 @@
   refs.openModalBtn2.addEventListener('click', logBackdropClick);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    refs.modal.classList.toggle('modal-is-hidden');
   }
   function logBackdropClick() {
     console.log('button click');
