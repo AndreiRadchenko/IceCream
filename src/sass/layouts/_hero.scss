@@ -175,16 +175,16 @@
     }
   }
   &__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // align-items: center;
     cursor: pointer;
     border-style: none;
     border-radius: 50%;
     width: 18px;
     height: 18px;
     color: var(--accent-main-color);
-    padding: 0;
     background-color: var(--text-main-color);
     @media screen and (min-width: $desktop) {
       width: 24px;
@@ -192,10 +192,24 @@
     }
   }
   &__icon {
-    width: 10px;
-    height: 10px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
+    @media screen and (min-width: $desktop) {
+      width: 24px;
+      height: 24px;
+    }
   }
+}
+
+.about-short__btn:focus .about-short__icon {
+  fill: var(--text-main-color);
+  background-color: var(--accent-main-color);
+}
+.about-short__btn:hover .about-short__icon {
+  fill: var(--text-main-color);
+  background-color: var(--accent-main-color);
 }
 
 .hero-contacts__list {
