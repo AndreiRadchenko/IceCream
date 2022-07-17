@@ -1,9 +1,31 @@
 .contacts {
   @extend .section;
-  padding-bottom: 0;
-  background-color: var(--bg-main-color);
+  padding-bottom: 0px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--text-main-color) 25%,
+    var(--bg-main-color) 25%,
+    var(--bg-main-color) 75%
+  );
+  @media screen and (min-width: $tablet) {
+    padding-top: 0px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--text-main-color) 47%,
+      var(--bg-main-color) 47%,
+      var(--bg-main-color) 53%
+    );
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 40px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--text-main-color) 21%,
+      var(--bg-main-color) 21%,
+      var(--bg-main-color) 79%
+    );
+  }
 }
-
 .list {
   list-style: none;
 }
@@ -34,9 +56,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   @media screen and (min-width: $tablet) {
     width: 224px;
     height: 528px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   }
   @media screen and (min-width: $desktop) {
     width: 368px;
@@ -127,9 +151,10 @@
   }
 }
 .contacts__work {
+  margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--bg-grey-color);
-  margin-bottom: 24px;
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
     margin-bottom: 32px;
@@ -159,12 +184,24 @@
   font-weight: 500;
   line-height: 1.86;
   text-align: left;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   color: var(--accent-secondary-color);
   @media screen and (min-width: $tablet) {
     font-size: 14px;
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: $desktop) {
     font-size: 16px;
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .tel__link {
@@ -239,7 +276,7 @@
   width: 161.45px;
   border-radius: 22px;
   color: var(--text-main-color);
-  background: var(--accent-main-color);
+  background: #d41342;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -252,7 +289,7 @@
   &:hover,
   &:focus {
     color: var(--accent-main-color);
-    background-color: var(--bg-secondary-color);
+    background-color: #ecebeb;
   }
   @media screen and (min-width: $tablet) {
     width: 191.45px;
@@ -274,7 +311,7 @@
   width: 161px;
   border-radius: 22px;
   color: var(--text-main-color);
-  background: var(--accent-main-color);
+  background: #d41342;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -286,7 +323,7 @@
   &:hover,
   &:focus {
     color: var(--accent-main-color);
-    background-color: var(--bg-secondary-color);
+    background-color: #ecebeb;
   }
   @media screen and (min-width: $tablet) {
     width: 174.05px;
@@ -325,15 +362,22 @@
 }
 
 .locations-modal {
+  background-image: url('../images/gallery/tab/many-ice-tab.png');
+  @include retina {
+    background-image: url('../images/gallery/tab/many-ice-tab-2x.png');
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   width: 250px;
   height: auto;
   border-radius: 4px;
-  background-color: var(--bg-green-color);
+  background-color: var(--bg-yellow-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
@@ -341,20 +385,30 @@
     top: 50%;
     left: 50%;
     width: 350px;
+    background-image: url('../images/gallery/tab/many-ice-tab.png');
+    @include retina {
+      background-image: url('../images/gallery/tab/many-ice-tab-2x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 13px;
     top: 50%;
     left: 50%;
-    width: 450px;
+    width: 500px;
+    background-image: url('../images/gallery/desk/many-ice-desk.png');
+    @include retina {
+      background-image: url('../images/gallery/desk/many-ice-desk-2x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
 }
-
 .locations-close-btn {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--bg-green-color);
+  background-color: var(--accent-secondary-color);
   position: absolute;
   top: 8px;
   right: 8px;
@@ -373,7 +427,10 @@
   font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.09em;
-  color: var(--text-main-color);
+  color: var(--accent-secondary-color);
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px rgba(0, 0, 0, 0.4),
+    0px 1px 3px rgba(0, 0, 0, 0.5);
+  border-color: var(--text-secondary-color);
   text-align: center;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -384,23 +441,33 @@
   font-weight: 700;
   font-size: 24px;
   text-align: center;
+  color: var(--accent-secondary-color);
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px rgba(0, 0, 0, 0.4),
+    0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .locations-link {
   font-style: normal;
-  color: var(--text-main-color);
+  color: var(--accent-secondary-color);
 }
 
 .franchise-modal {
+  background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
+  @include retina {
+    background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   width: 250px;
   height: auto;
   border-radius: 4px;
-  background-color: var(--bg-yellow-color);
+  background-color: var(--accent-secondary-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
@@ -408,12 +475,24 @@
     top: 50%;
     left: 50%;
     width: 350px;
+    background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
+    @include retina {
+      background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
   @media screen and (min-width: $desktop) {
     margin-left: 13px;
     top: 50%;
     left: 50%;
     width: 450px;
+    background-image: url('../images/about/IceCream-(mob)/sectionbg.png');
+    @include retina {
+      background-image: url('../images/about/IceCream-(mob)/sectionbg-2x.png');
+    }
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
 }
 
@@ -421,7 +500,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--bg-yellow-color);
+  background-color: var(--accent-secondary-color);
   position: absolute;
   top: 8px;
   right: 8px;
@@ -444,6 +523,8 @@
   text-align: center;
   margin-bottom: 12px;
   text-transform: uppercase;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px rgba(0, 0, 0, 0.4),
+    0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .subscription {
@@ -452,6 +533,11 @@
 
 .subscription__details {
   align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;
@@ -468,24 +554,47 @@
   font-style: normal;
   color: var(--text-main-color);
   margin-bottom: 20px;
+  animation: blink 5s linear infinite;
+  border-color: var(--text-secondary-color);
+  animation: blur 2s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  @keyframes blur {
+    from {
+      text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+        0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff;
+    }
+  }
 }
 
 .subscription__btn {
-  background-color: var(--bg-yellow-color);
+  background-color: var(--accent-secondary-color);
   color: var(--text-main-color);
   font-size: 24px;
   font-weight: 900;
   line-height: 1.17;
   letter-spacing: 0.09em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 20px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 40px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.9), 0px 1px 1px rgba(0, 0, 0, 0.4),
+    0px 1px 3px rgba(190, 131, 133, 0.764);
+  border-color: var(--text-secondary-color);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  animation: blur 5s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  @keyframes blur {
+    from {
+      text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+        0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff;
+    }
+  }
 }
 
 .subscription__input {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -498,4 +607,5 @@
   outline: none;
   align-items: center;
   text-align: center;
+  border-radius: 50%;
 }
