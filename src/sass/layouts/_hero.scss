@@ -76,6 +76,7 @@
       color: var(--accent-main-color);
     }
   }
+
   &__image {
     position: absolute;
     top: 92px;
@@ -83,6 +84,8 @@
     z-index: -1;
     background-repeat: no-repeat;
     height: 410px;
+    animation-name: jackInTheBox;
+    animation-duration: 2s;
     @media screen and (min-width: $tablet) {
       top: 80px;
       left: 322px;
@@ -96,21 +99,34 @@
       height: 557px;
     }
   }
+
   &__image-girl {
     display: none;
     @media screen and (min-width: $tablet) {
       display: block;
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       right: 32px;
-      z-index: -1;
       background-repeat: no-repeat;
+      &:hover,
+      &:focus,
+      &:active {
+        animation-name: tada;
+        animation-duration: 1s;
+        cursor: pointer;
+      }
     }
     @media screen and (min-width: $desktop) {
       bottom: 0px;
       right: 16px;
       width: 304;
       height: 241px;
+      &:hover,
+      &:focus,
+      &:active {
+        animation-name: tada;
+        animation-duration: 1s;
+      }
     }
   }
   // &__image-milk {
@@ -164,6 +180,11 @@
     margin-top: 40px;
   }
   &__image {
+    &:hover,
+    &:focus {
+      animation-name: swing;
+      animation-duration: 1.5s;
+    }
     width: 152px;
     height: 154px;
     @media screen and (min-width: $desktop) {

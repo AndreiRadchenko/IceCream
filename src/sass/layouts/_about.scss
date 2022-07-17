@@ -88,6 +88,12 @@
   height: 100%;
   display: block;
   margin-bottom: 40px;
+  &:hover,
+  &:focus,
+  &:active {
+    animation-name: swing;
+    animation-duration: 2s;
+  }
   @media screen and (min-width: $tablet) {
     margin-right: 32px;
     margin-bottom: 0;
