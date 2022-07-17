@@ -5,18 +5,21 @@
   left: 0;
   right: 0;
   background-color: transparent;
-  &.js-no-transparency {
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
-    background-color: rgba(209, 130, 200, 0.315);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    }
 }
+.no-scroll {
+  overflow: hidden;
+}
+.js-no-transparency {
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: rgba(209, 130, 200, 0.315);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  }
 
 .header-nav {
   position: relative;
@@ -154,7 +157,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background-color: var(--bg-secondary-color);
   text-align: center;
   border-radius: 22px;
   padding: 10px 28px;
