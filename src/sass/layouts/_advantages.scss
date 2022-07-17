@@ -1,17 +1,16 @@
-
 .advantages {
-    background-color: #FFF5F6;
-    padding-bottom: 60px;
+  background-color: #fff5f6;
+  padding-bottom: 60px;
 }
 
 .advanteges__list {
     @media screen and (min-width: 768px) {
         display: flex;    
     }
-    
+  
 }
-
 .advanteges__item:not(:last-child) {
+
     @media screen and (max-width: 767px) {
         margin-bottom: 32px;
     }
@@ -22,7 +21,6 @@
         margin-right: 115px;
     }
 }
-
 .advanteges__item::before {
     content: "";
     display: flex;
@@ -35,22 +33,21 @@
         margin-bottom: 36px;
     }
 }
-
 .advanteges__item--first::before {
-    width: 33px;
-    background-image: url("../images/advanteges/first.png");
+  width: 33px;
+  background-image: url('../images/advanteges/first.png');
 }
 
 .advanteges__item--second::before {
-    content: "";
-    width: 50px;
-    background-image: url("../images/advanteges/second.png");
+  content: '';
+  width: 50px;
+  background-image: url('../images/advanteges/second.png');
 }
 
 .advanteges__item--last::before {
-    content: "";
-    width: 44px;
-    background-image: url("../images/advanteges/last.png");
+  content: '';
+  width: 44px;
+  background-image: url('../images/advanteges/last.png');
 }
 
 .advanteges__item-count {
@@ -63,6 +60,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
     margin-bottom: 4px;
     @media screen and (min-width: 768px) {
         font-size: 48px;
@@ -85,6 +88,12 @@
     font-size: 12px;
     line-height: 1.67;
     color: #000000;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.71;
