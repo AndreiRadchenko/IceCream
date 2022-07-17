@@ -310,8 +310,8 @@
     background-image: url('../images/hero/tab/circle-tab-2x.png');
   }
   @media screen and (min-width: $desktop) {
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
     background-image: url('../images/hero/desk/circle-desk.png');
     @include retina {
       background-image: url('../images/hero/desk/circle-desk-2x.png');
