@@ -203,6 +203,8 @@
   color: inherit;
   &:hover, &:focus{
     color: var(--accent-main-color);
+    cursor: pointer;
+    
   }
 }
 .style-line{
