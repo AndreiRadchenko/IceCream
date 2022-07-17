@@ -79,9 +79,14 @@
     font-size: 16px;
     line-height: 1.31;
     color: var(--accent-main-color);
+    background-color: var(--bg-secondary-color);
     margin-top: 32px;
     margin-right: 32px;
     margin-left: 32px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: $desktop) {
     margin-top: 40px;
@@ -162,6 +167,10 @@
   font-size: 16px;
   line-height: 1.31;
   color: var(--accent-main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-icon-arrow-right {
   margin-left: 16px;
