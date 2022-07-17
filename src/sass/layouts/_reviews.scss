@@ -1,13 +1,11 @@
 .reviews {
   &--padding {
-    padding-top: 60px;
+    padding-bottom: 60px;
     @media screen and (min-width: $tablet) {
-      padding-top: 60px;
       padding-bottom: 80px;
     }
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 120px;
     padding-bottom: 120px;
   }
   &__img-wrap {
