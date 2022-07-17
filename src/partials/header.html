@@ -8,21 +8,21 @@
               images/header/logo-desk.png    1x,
               images/header/logo-desk-2x.png 2x
             "
-            media="(min-width:1200px)"
+            media="(min-width: 1200px)"
           />
           <source
             srcset="
               images/header/logo-tab.png    1x,
               images/header/logo-tab-2x.png 2x
             "
-            media="(min-width:768px)"
+            media="(min-width: 768px)"
           />
           <source
             srcset="
               images/header/logo-mob.png    1x,
               images/header/logo-mob-2x.png 2x
             "
-            media="(min-width:320px)"
+            media="(min-width: 320px)"
           />
           <img
             class="img"
@@ -58,7 +58,7 @@
           ></use>
         </svg>
       </button>
-      <button type="button" class="buy-btn" buy-modal-open1>
+      <button data-modal-open1 class="buy-btn" type="button">
         Buy now<svg class="input-icon-arrow-right" width="15" height="15">
           <use href="images/symbol-defs.svg#icon-arrow-right"></use>
         </svg>
@@ -72,52 +72,50 @@
           <use href="images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
-      <button type="button" class="buy-modal-open" buy-modal-open2>
+      <button data-modal-open2 type="button" class="buy-modal-open">
         Buy now
         <svg class="input-icon-arrow-right" width="15" height="15">
           <use href="images/symbol-defs.svg#icon-arrow-right"></use>
         </svg>
       </button>
       <ul class="mob-menu__list">
-        
         <li class="mob-menu__item">
           <div class="style-line"></div>
           <a href="#hero" class="mob-menu__link">Home</a>
         </li>
-        
+
         <li class="mob-menu__item">
           <div class="style-line"></div>
           <a href="#about" class="mob-menu__link">About us</a>
         </li>
-        
+
         <li class="mob-menu__item">
           <div class="style-line"></div>
           <a href="#advantages" class="mob-menu__link">How its made?</a>
         </li>
-        
+
         <li class="mob-menu__item">
           <div class="style-line"></div>
           <a href="#products" class="mob-menu__link">Our products</a>
         </li>
-        
+
         <li class="mob-menu__item">
           <div class="style-line"></div>
           <a href="#contacts" class="mob-menu__link">Contact</a>
           <div class="style-line"></div>
         </li>
-        
       </ul>
     </div>
   </div>
 
-  <div class="buy-backdrop modal-is-hidden" buy-modal>
+  <div class="buy-backdrop modal-is-hidden" data-modal-buy>
     <div class="buy-modal">
-      <button type="button" class="buy-close-btn" buy-modal-close>
+      <button type="button" class="buy-close-btn" data-modal-close>
         <svg class="close-btn-icon" width="18" height="18">
           <use href="images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
-      
+
       <div class="buy-modal-field">
         <label for="user-name" class="buy-modal-label">name</label>
         <div class="input-shell">
