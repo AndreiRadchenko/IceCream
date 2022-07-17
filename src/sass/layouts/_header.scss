@@ -97,19 +97,26 @@
   top: 0;
   right: 0;
   background-color: var(--bg-modal-color);
-  width: 35vw;
+  width: 250px;
   height: 100vh;
-  transition: var(--timing-function);
+  // transition: var(--timing-function);
   transform: translateX(0);
-  transition: transform linear;
-  &.active {
+  transition: transform 250ms var(--timing-function);
+  // &.active {
+  //   transform: translateX(100%);
+  // }
+  // &.active > .mob-open-btn {
+  //   display: none;
+  // }
+  &.is-hidden {
     transform: translateX(100%);
-  }
-  &.active > .mob-open-btn {
-    display: none;
+
+    // visibility: hidden;
+    // opacity: 0;
+    // pointer-events: none;
   }
   @media screen and (min-width: $tablet) {
-    width: calc(100vw * 0.33);
+    width: calc(100vw * 0.44);
     // left: 495px;
   }
   @media screen and (min-width: $desktop) {
@@ -180,7 +187,7 @@
   color: inherit;
 }
 
-.is-hidden {
+.modal-is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
