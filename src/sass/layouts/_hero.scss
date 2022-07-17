@@ -204,15 +204,13 @@
     padding: 0;
     background-color: var(--text-main-color);
     @media screen and (min-width: $desktop) {
-      border-radius: 50%;
       width: 24px;
       height: 24px;
     }
   }
   &__icon {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 10px;
+    height: 10px;
     fill: currentColor;
   }
 }
