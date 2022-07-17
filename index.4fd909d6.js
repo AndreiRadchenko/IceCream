@@ -1,2 +1,0 @@
-var refs={openMobmenuBtn:document.querySelector(".mob-open-btn"),closeMobmenuBtn:document.querySelector(".mob-close-btn"),Mobmenu:document.querySelector(".mobile-menu"),body:document.querySelector("body")};function toggleMobmenu(){refs.Mobmenu.classList.toggle("is-hidden"),refs.body.classList.toggle("no-scroll")}refs.openMobmenuBtn.addEventListener("click",toggleMobmenu),refs.closeMobmenuBtn.addEventListener("click",toggleMobmenu);
-//# sourceMappingURL=index.4fd909d6.js.map
