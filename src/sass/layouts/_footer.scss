@@ -81,12 +81,12 @@
 .social-list__href {
   @extend .link;
   color: var(--accent-secondary-color);
-  transform: scale(1);
-  @include customTransition(color, transform);
+  // transform: scale(1);
+  @include customTransition(color);
   &:hover,
   &:focus {
     color: var(--accent-main-color);
-    transform: scale(1.2);
+    // transform: scale(1.2);
   }
 }
 .social-list__icon {
