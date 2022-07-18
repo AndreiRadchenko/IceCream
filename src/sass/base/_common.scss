@@ -23,12 +23,15 @@ body {
   font-weight: 400;
   position: relative;
 
-  //   &.modal-open {
-  //     overflow: hidden;
-  //   }
-  //   &.mobile-menu-open {
-  //     overflow: hidden;
-  //   }
+  &.modal-open {
+    // overflow: hidden;
+    height: 100vh;
+    overflow-y: hidden;
+    // position: fixed;
+  }
+  // &.mobile-menu-open {
+  //   overflow: hidden;
+  // }
 
   @media screen and (min-width: $tablet) {
   }
@@ -73,5 +76,18 @@ img {
   @media screen and (min-width: $tablet) {
   }
   @media screen and (min-width: $desktop) {
+  }
+}
+a.anchor {
+  color: red;
+  display: block;
+  position: relative;
+  top: -86px;
+  visibility: hidden;
+  @media screen and (min-width: $tablet) {
+    top: -102px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: -111px;
   }
 }
