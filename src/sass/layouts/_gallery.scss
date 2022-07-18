@@ -1,32 +1,32 @@
 .gallery .container {
   padding: 0;
-  padding-bottom: 60px;
   @media screen and (min-width: $desktop) {
-    padding: 0 94px;
+    padding-right: 94px;
+    padding-left: 94px;
   }
 }
 
 .gallery {
-  height: 136px;
+  padding: 0 0 60px 0;
   background: linear-gradient(
     to bottom,
-    var(--bg-main-color) 0 19%,
-    var(--bg-secondary-color) 20% 100%
+    var(--bg-main-color) 0 13%,
+    var(--bg-secondary-color) 14% 100%
   );
   @media screen and (min-width: $tablet) {
-    height: 327px;
+    padding-top: 60px;
     background: linear-gradient(
       to bottom,
-      var(--bg-main-color) 0 50%,
-      var(--bg-secondary-color) 51% 100%
+      var(--bg-main-color) 0 54%,
+      var(--bg-secondary-color) 55% 100%
     );
   }
   @media screen and (min-width: $desktop) {
-    height: 430px;
+    padding-bottom: 120px;
     background: linear-gradient(
       to bottom,
-      var(--bg-main-color) 0 20%,
-      var(--bg-secondary-color) 21% 100%
+      var(--bg-main-color) 0 23%,
+      var(--bg-secondary-color) 24% 100%
     );
   }
 }
