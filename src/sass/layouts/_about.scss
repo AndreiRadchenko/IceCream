@@ -205,7 +205,9 @@
   visibility: hidden;
 }
 .backdrop.is-hidden .about-modal {
+  // position: relative;
   transform: translate(-50%, -50%) scale(0);
+  // z-index: 50;
 }
 
 .about-modal {
