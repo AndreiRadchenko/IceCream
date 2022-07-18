@@ -14,6 +14,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('modal-is-hidden');
+    document.body.classList.toggle('modal-open');
   }
   function logBackdropClick() {
     console.log('button click');

@@ -23,12 +23,13 @@ body {
   font-weight: 400;
   position: relative;
 
-  //   &.modal-open {
-  //     overflow: hidden;
-  //   }
-  //   &.mobile-menu-open {
-  //     overflow: hidden;
-  //   }
+  &.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  // &.mobile-menu-open {
+  //   overflow: hidden;
+  // }
 
   @media screen and (min-width: $tablet) {
   }
