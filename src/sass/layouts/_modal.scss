@@ -1,0 +1,169 @@
+.buy-modal {
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  padding: 30px;
+  background-color: var(--bg-green-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    padding: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 500px;
+    padding: 40px;
+  }
+}
+
+.buy-modal__list {
+  margin-bottom: 20px;
+}
+.buy-modal__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy-modal__text {
+  margin-left: 15%;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.13;
+  letter-spacing: 0.07em;
+
+  text-transform: uppercase;
+  color: var(--bg-secondary-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 22px;
+    line-height: 1.13;
+    letter-spacing: 0.05em;
+  }
+}
+.buy-modal__label {
+  margin-left: 3%;
+}
+.buy-modal__input-checkbox {
+  width: 15px;
+  height: 15px;
+  @media screen and (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 25px;
+    height: 25px;
+  }
+}
+.buy-modal__label {
+  display: flex;
+}
+.buy-modal__img {
+  width: 90px;
+  height: 90px;
+  @media screen and (min-width: $tablet) {
+    width: 100px;
+    height: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 120%;
+    height: 120%;
+  }
+}
+.buy-modal__btn {
+  font-family: 'DM Sans';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 22px;
+  padding: 10px 28px;
+  border: 1px transparent;
+  width: 120px;
+  height: 35px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--accent-main-color);
+  background-color: var(--bg-secondary-color);
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--bg-secondary-color);
+    background-color: var(--accent-main-color);
+  }
+  @media screen and (min-width: $tablet) {
+    width: 209px;
+    height: 44px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 230px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+.buy-close-btn {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn-icon {
+  fill: #fff;
+}
+.close-btn-icon:hover,
+.close-btn-icon:focus {
+  fill: red;
+}
+.buy-modal__btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.buy-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
