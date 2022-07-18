@@ -242,21 +242,22 @@
   @media screen and (min-width: $tablet) {
     position: absolute;
     top: 92px;
-    right: 42px;
+    right: 32px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
   @media screen and (min-width: $desktop) {
     top: 152px;
-    right: 34px;
+    right: 16px;
   }
 }
 
+.hero-contacts__item {
+  position: relative;
+}
 .hero-contacts__item:not(:last-child) {
   margin-bottom: 16px;
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 15px;
-  }
 }
 .hero-contacts__link {
   @extend .link;
@@ -283,6 +284,7 @@
   }
 }
 .hero-contacts__item-count {
+  display: block;
   font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
@@ -296,10 +298,12 @@
     line-height: 1.15;
   }
 }
-.hero-contacts__link::before {
+.hero-contacts__link::after {
   content: '';
   display: flex;
   position: absolute;
+  top: 0;
+  right: -10px;
   z-index: -1;
   width: 16px;
   height: 16px;
@@ -310,8 +314,8 @@
     background-image: url('../images/hero/tab/circle-tab-2x.png');
   }
   @media screen and (min-width: $desktop) {
-    width: 29px;
-    height: 29px;
+    width: 30px;
+    height: 30px;
     background-image: url('../images/hero/desk/circle-desk.png');
     @include retina {
       background-image: url('../images/hero/desk/circle-desk-2x.png');
