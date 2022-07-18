@@ -293,7 +293,7 @@
   align-items: center;
   color: #d41443;
   transition: background-color 250ms var(--timing-function);
-  z-index: 10;
+  z-index: 1;
   position: relative;
   &:hover,
   &:focus {
