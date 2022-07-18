@@ -17,7 +17,7 @@
     padding: 40px;
   }
   @media screen and (min-width: $desktop) {
-    width: 500px;
+    width: 480px;
     padding: 40px;
   }
 }
@@ -161,9 +161,4 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
-.buy-backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
