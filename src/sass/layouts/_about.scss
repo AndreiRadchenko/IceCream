@@ -192,6 +192,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: 101;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
@@ -205,9 +206,7 @@
   visibility: hidden;
 }
 .backdrop.is-hidden .about-modal {
-  // position: relative;
   transform: translate(-50%, -50%) scale(0);
-  // z-index: 50;
 }
 
 .about-modal {
