@@ -1,0 +1,2 @@
+var mobMenuLinks=document.querySelectorAll(".mob-menu__link"),menuLinks=document.querySelectorAll(".menu__link"),anchors=document.querySelectorAll(".anchor");function activeMenu(){for(var n=anchors.length;--n&&window.scrollY+111<anchors[n].offsetTop;);mobMenuLinks.forEach((function(n){return n.classList.remove("current")})),menuLinks.forEach((function(n){return n.classList.remove("current")})),mobMenuLinks[n].classList.add("current"),menuLinks[n].classList.add("current")}activeMenu(),window.addEventListener("scroll",activeMenu);
+//# sourceMappingURL=index.6e29e242.js.map
