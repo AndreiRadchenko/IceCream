@@ -37,13 +37,32 @@
           <br />
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button class="button about-btn" type="button">
-          Read more
-          <svg class="about-btn__icon">
-            <use href="images/symbol-defs.svg#icon-Vector-1"></use>
+        <button class="button about-btn" type="button" data-about-modal-open>
+          Watch more
+          <svg class="about-btn__youtube">
+            <use href="images/symbol-defs.svg#icon-youtube"></use>
           </svg>
         </button>
       </div>
     </div>
   </div>
 </section>
+
+<!--modal-about-->
+<div class="backdrop is-hidden" data-about-modal>
+  <div class="about-modal">
+    <button type="button" class="about-close-btn" data-about-modal-close>
+      <svg class="icon-close-about" width="14" height="14">
+        <use href="./images/symbol-defs.svg#icon-close-about"></use>
+      </svg>
+    </button>
+    <iframe
+      class="about__iframe"
+      src="https://youtube.com/embed/1ddNR6SZPos"
+      title="IceCreamFactory"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
