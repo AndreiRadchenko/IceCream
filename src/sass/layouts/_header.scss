@@ -88,17 +88,15 @@
     line-height: 1.31;
     color: var(--accent-main-color);
     background-color: var(--bg-secondary-color);
-    // margin-top: 32px;
     margin-right: 32px;
     margin-left: 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
   }
   @media screen and (min-width: $desktop) {
-    // margin-top: 40px;
-    // margin-right: 0;
   }
 }
 
@@ -106,11 +104,10 @@
   display: inline-flex;
   align-items: center;
   margin-left: auto;
-  // margin-top: 10px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
   @media screen and (min-width: $tablet) {
-    // padding-top: 22px;
   }
   @media screen and (min-width: $desktop) {
     display: none;
@@ -157,19 +154,18 @@
   margin-bottom: 26px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .buy-modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   border-radius: 22px;
   padding: 10px 28px;
   border: 1px transparent;
   width: 209px;
   height: 44px;
-  // margin-left: 20px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
@@ -179,6 +175,7 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .input-icon-arrow-right {
   margin-left: 16px;
