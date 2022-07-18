@@ -78,3 +78,16 @@ img {
   @media screen and (min-width: $desktop) {
   }
 }
+a.anchor {
+  color: red;
+  display: block;
+  position: relative;
+  top: -86px;
+  visibility: hidden;
+  @media screen and (min-width: $tablet) {
+    top: -102px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: -111px;
+  }
+}

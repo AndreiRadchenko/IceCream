@@ -1,5 +1,4 @@
 .hero__container {
-  outline: 1px solid red;
   position: relative;
   z-index: 1;
   font-family: 'Titan One', cursive;
@@ -20,7 +19,6 @@
   &__title {
     max-width: 218px;
     margin-bottom: 20px;
-    // @include font(400, 26px, 1.16, 0.04em);
     font-weight: 400;
     font-size: 26px;
     line-height: 1.15;
@@ -39,7 +37,6 @@
       line-height: 1.14;
     }
     &--accent {
-      // @include font(400, 48px, 0.96, 0.04em);
       display: block;
       font-weight: 400;
       font-size: 48px;
@@ -60,7 +57,6 @@
   &__link {
     @extend .link;
     font-family: 'DM Sans', sans-serif;
-    // @include font(400, 8px, 1.25, 0.04em);
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -71,9 +67,18 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: #ecebeb;
+      color: var(--accent-main-color);
+    }
     &--reserve {
       background-color: var(--bg-secondary-color);
       color: var(--accent-main-color);
+      &:hover {
+        background-color: #ecebeb;
+      }
     }
   }
 
@@ -121,14 +126,9 @@
       right: 16px;
       width: 304;
       height: 241px;
-      &:hover,
-      &:focus,
-      &:active {
-        animation-name: tada;
-        animation-duration: 1s;
-      }
     }
   }
+
   &__elipse {
     position: absolute;
     z-index: -2;
@@ -206,9 +206,15 @@
     height: 18px;
     color: var(--accent-main-color);
     background-color: var(--text-main-color);
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: $desktop) {
       width: 24px;
       height: 24px;
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-main-color);
     }
   }
   &__icon {
@@ -225,49 +231,56 @@
 
 .about-short__btn:focus .about-short__icon {
   fill: var(--text-main-color);
-  background-color: var(--accent-main-color);
 }
 .about-short__btn:hover .about-short__icon {
   fill: var(--text-main-color);
-  background-color: var(--accent-main-color);
 }
 
 .hero-contacts__list {
   @extend .list;
   display: none;
-
   @media screen and (min-width: $tablet) {
     position: absolute;
     top: 92px;
     right: 42px;
     display: flex;
     flex-direction: column;
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--text-main-color);
-    font-size: 8px;
-    line-height: 1.25;
   }
   @media screen and (min-width: $desktop) {
     top: 152px;
-    right: 16px;
-    font-size: 14px;
-    line-height: 1.28;
+    right: 34px;
   }
 }
-.hero-contacts__item {
+
+.hero-contacts__item:not(:last-child) {
+  margin-bottom: 16px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+.hero-contacts__link {
+  @extend .link;
+  cursor: pointer;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-.hero-contacts__item:not(:last-child) {
-  margin-bottom: 16px;
-}
-.hero-contacts__item::before {
-  content: '';
-  display: block;
-  // background-image: url('images/hero/tab/circle-tab.png');
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-main-color);
+  font-size: 8px;
+  line-height: 1.25;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.5);
+  }
 }
 .hero-contacts__item-count {
   font-family: 'Titan One', cursive;
@@ -281,5 +294,27 @@
   @media screen and (min-width: $desktop) {
     font-size: 46px;
     line-height: 1.15;
+  }
+}
+.hero-contacts__link::before {
+  content: '';
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/hero/tab/circle-tab.png');
+  @include retina {
+    background-image: url('../images/hero/tab/circle-tab-2x.png');
+  }
+  @media screen and (min-width: $desktop) {
+    width: 29px;
+    height: 29px;
+    background-image: url('../images/hero/desk/circle-desk.png');
+    @include retina {
+      background-image: url('../images/hero/desk/circle-desk-2x.png');
+    }
   }
 }
