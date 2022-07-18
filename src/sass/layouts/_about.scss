@@ -173,6 +173,10 @@
     stroke: var(--text-main-color);
   }
 }
+
+.about-btn:hover .about-btn__youtube {
+  transform: scale(1.5);
+}
 .about-btn__youtube {
   display: block;
   margin: 0;
@@ -180,6 +184,7 @@
   width: 32px;
   height: 16px;
   --arrow-color: currentColor;
+  transition: transform 250 ms var(--timing-function);
 }
 
 // <!--modal-about-->
@@ -188,30 +193,37 @@
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
+.backdrop.is-hidden .about-modal {
+  transform: translate(-50%, -50%) scale(0);
+}
 
 .about-modal {
-  width: 100%;
+  width: 300px;
+  height: 168px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
   @media screen and (min-width: $tablet) {
+    width: 560px;
+    height: 315px;
     position: absolute;
     top: 50%;
     left: 50%;
   }
   @media screen and (min-width: $desktop) {
+    width: 875px;
+    height: 492px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -222,6 +234,7 @@
   border-radius: 4px;
   width: 300px;
   height: 168px;
+  transition: border 250ms var(--timing-function);
   @media screen and (min-width: $tablet) {
     width: 560px;
     height: 315px;
@@ -238,7 +251,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--bg-main-color);
   top: -9px;
-  right: 9px;
+  right: -9px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,10 +261,6 @@
   stroke: var(--accent-main-color);
   transition: stroke 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
-  @media screen and (min-width: $tablet) {
-    top: -10px;
-    right: 30px;
-  }
   &:hover,
   &:focus {
     background: var(--accent-main-color);
