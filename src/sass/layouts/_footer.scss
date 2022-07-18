@@ -5,6 +5,9 @@
   @media screen and (min-width: $tablet) {
     padding-bottom: 8px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+  }
 }
 .footer {
   @media screen and (min-width: $tablet) {
@@ -78,10 +81,12 @@
 .social-list__href {
   @extend .link;
   color: var(--accent-secondary-color);
-  @include customTransition(color);
+  transform: scale(1);
+  @include customTransition(color, transform);
   &:hover,
   &:focus {
     color: var(--accent-main-color);
+    transform: scale(1.2);
   }
 }
 .social-list__icon {
@@ -102,6 +107,11 @@
   line-height: 1.86;
   letter-spacing: 0.01em;
   color: var(--accent-main-color);
+  &:hover,
+  &:focus {
+    animation-name: headShake;
+    animation-duration: 1s;
+  }
   @media screen and (min-width: $tablet) {
     font-size: 14px;
   }

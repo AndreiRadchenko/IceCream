@@ -1,109 +1,110 @@
-.reviews--margin {
-  padding-top: 60px;
-  @media screen and (min-width: $tablet) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+.reviews {
+  &--padding {
+    padding-bottom: 60px;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 80px;
+    }
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
-}
-.reviews__img-wrap {
-  display: flex;
-  justify-content: center;
-}
-.reviews__img {
-  border-radius: 50%;
-  margin-bottom: 32px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 20px;
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
   }
-  @media screen and (min-width: $desktop) {
+  &__img {
+    border-radius: 50%;
     margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 32px;
+    }
   }
-}
-.reviews__text-wrap {
-  max-width: 320px;
-  height: auto;
-  background-color: #fafafa;
-  padding: 43px 60px 23px;
-  text-align: center;
-  margin-bottom: 16px;
-
-  @media screen and (min-width: $tablet) {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 37px 53px 44px;
-  }
-  @media screen and (min-width: $desktop) {
-    max-width: 968px;
-    padding: 47px 109px 39px;
-    margin: 0 auto 16px;
-  }
-}
-.reviews__text {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 255%;
-  color: #000000;
-  background-image: repeating-linear-gradient(
-    180deg,
-    transparent,
-    transparent 29px,
-    #e1e1e1 30px
-  );
-  @media screen and (min-width: $tablet) {
-    font-size: 14px;
-    line-height: 216%;
-    letter-spacing: 0.04em;
+  &__text-wrap {
+    max-width: 320px;
+    height: auto;
+    background-color: #fafafa;
+    padding: 43px 60px 23px;
     text-align: center;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 37px 53px 44px;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 968px;
+      padding: 47px 109px 39px;
+      margin: 0 auto 16px;
+    }
+  }
+  &__text {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    color: #000000;
     background-image: repeating-linear-gradient(
       180deg,
       transparent,
-      transparent 28px,
-      #e1e1e1 29px
+      transparent 29px,
+      #e1e1e1 30px
     );
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 216%;
+      letter-spacing: 0.04em;
+      text-align: center;
+      background-image: repeating-linear-gradient(
+        180deg,
+        transparent,
+        transparent 28px,
+        #e1e1e1 29px
+      );
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 186%;
+      background-image: repeating-linear-gradient(
+        180deg,
+        transparent,
+        transparent 27px,
+        #e1e1e1 29px
+      );
+    }
   }
-  @media screen and (min-width: $desktop) {
-    font-size: 16px;
+  &__elipse-red {
+    fill: red;
+  }
+  &__ellipse-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  &__elipse-red:not(:last-child) {
+    margin-right: 10px;
+  }
+  .reviews__text-name {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
     line-height: 186%;
-    background-image: repeating-linear-gradient(
-      180deg,
-      transparent,
-      transparent 27px,
-      #e1e1e1 29px
-    );
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
   }
 }
-.elipse-red {
-  fill: red;
-}
-.reviews__ellipse-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-.elipse-red:not(:last-child) {
-  margin-right: 10px;
-}
-.reviews__text-name {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 186%;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 16px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 32px;
-    font-size: 16px;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 20px;
-  }
-}
+
 .icon-quote {
   background-image: url('/src/images/reviews/quote.svg');
   background-repeat: no-repeat;
