@@ -5,12 +5,14 @@
   left: 0;
   right: 0;
   background-color: transparent;
+}
+.container--header {
   padding: 8px 20px;
   @media screen and (min-width: $tablet) {
-    padding: 16px 32px;
+    padding: 16px 16px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 20px 56px;
+    padding: 20px 16px;
   }
 }
 .js-no-transparency {
@@ -27,7 +29,7 @@
 .header-nav {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header--logo {
@@ -86,15 +88,14 @@
     border: 1px transparent;
     width: 209px;
     height: 44px;
-    margin-right: 0 auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     color: var(--accent-main-color);
     background-color: var(--bg-secondary-color);
-    margin-right: 32px;
     margin-left: 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
