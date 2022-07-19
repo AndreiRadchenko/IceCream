@@ -86,7 +86,7 @@
     border: 1px transparent;
     width: 209px;
     height: 44px;
-    margin-right: 0 auto;
+    margin-right: auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -100,8 +100,23 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    &:hover, &:focus {
+      color: var(--bg-secondary-color);
+      background-color: var(--accent-main-color);
+      .input-icon-arrow-right {
+        fill: var(--bg-secondary-color);
+      }
+    }
   }
   @media screen and (min-width: $desktop) {
+    &:hover, &:focus {
+      color: var(--bg-secondary-color);
+      background-color: var(--accent-main-color);
+      fill: var(--bg-secondary-color);
+      .input-icon-arrow-right {
+        fill: var(--bg-secondary-color);
+      }
+    }    
   }
 }
 
@@ -149,6 +164,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  &:hover, &:focus {
+    color: var(--bg-secondary-color);
+    background-color: var(--accent-main-color);
+    .input-icon-arrow-right {
+      fill: var(--bg-secondary-color);
+    }
+  }
 }
 
 .mobile-menu {
