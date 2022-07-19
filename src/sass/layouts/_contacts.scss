@@ -1,6 +1,7 @@
 .contacts {
   @extend .section;
   padding-bottom: 0px;
+  padding-top: 0px;
   background-image: linear-gradient(
     to bottom,
     var(--text-main-color) 25%,
@@ -17,7 +18,7 @@
     );
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 40px;
+    padding-top: 0px;
     background-image: linear-gradient(
       to bottom,
       var(--text-main-color) 21%,
