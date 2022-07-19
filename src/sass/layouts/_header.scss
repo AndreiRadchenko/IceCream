@@ -33,14 +33,10 @@
   align-items: center;
 }
 .header--logo {
-  // padding-top: 8px;
   margin-right: 61px;
   @media screen and (min-width: $tablet) {
-    // padding-top: 32px;
-    // padding-left: 16px;
   }
   @media screen and (min-width: $desktop) {
-    // padding-top: 37px;
     padding-left: 0px;
     margin-right: 0;
   }
@@ -65,6 +61,7 @@
   text-decoration: none;
   padding: 15px 0;
   color: inherit;
+  @include customTransition(color);
   &:hover,
   &:focus {
     color: var(--accent-main-color);
@@ -187,7 +184,6 @@
 }
 .mob-menu__list {
   list-style: none;
-  // margin-left: 20px;
   padding: 0;
 }
 .mob-menu__item {
@@ -204,13 +200,10 @@
   display: inline-block;
   text-decoration: none;
   padding: 15px 0;
-  // color: inherit;
   color: var(--text-main-color);
+  @include customTransition(color);
   &:hover,
   &:focus {
-    color: var(--accent-main-color);
-  }
-  &.current {
     color: var(--accent-main-color);
   }
 }
