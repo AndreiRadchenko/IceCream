@@ -109,11 +109,11 @@
   position: relative;
   background-color: var(--bg-pink-color);
   &::before {
-    background-image: url('../images/products/mob/icecream-mob.png');
+    background-image: url('../images/products/mob/icecream-mob.webp');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/mob/icecream-mob-2x.png');
+      background-image: url('../images/products/mob/icecream-mob-2x.webp');
     }
 
     @media screen and (min-width: $tablet) {
@@ -146,11 +146,11 @@
   background-color: var(--bg-yellow-color);
   position: relative;
   &::before {
-    background-image: url('../images/products/mob/icecoffee-mob.png');
+    background-image: url('../images/products/mob/icecoffee-mob.webp');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/mob/icecoffee-mob-2x.png');
+      background-image: url('../images/products/mob/icecoffee-mob-2x.webp');
     }
     @media screen and (min-width: $tablet) {
       width: 224px;
@@ -182,11 +182,11 @@
   background-color: var(--bg-green-color);
   position: relative;
   &::before {
-    background-image: url('../images/products/mob/milkshake-mob.png');
+    background-image: url('../images/products/mob/milkshake-mob.webp');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/mob/milkshake-mob-2x.png');
+      background-image: url('../images/products/mob/milkshake-mob-2x.webp');
     }
     @media screen and (min-width: $tablet) {
       width: 224px;
