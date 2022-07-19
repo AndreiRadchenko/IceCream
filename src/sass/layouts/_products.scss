@@ -58,10 +58,12 @@
 
   @media screen and (min-width: $tablet) {
     gap: 16px;
+    padding: 0 16px;
   }
 
   @media screen and (min-width: $desktop) {
     gap: 32px;
+    padding: 0;
   }
 }
 
@@ -90,15 +92,15 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding: 118px 32px 60px 32px;
-    width: 224px;
+    padding: 118px 32px 40px 32px;
+    width: calc((100% - 16px) / 3);
     height: 473px;
   }
 
   @media screen and (min-width: $desktop) {
     padding: 165px 63px 60px 63px;
     margin-top: 261px;
-    width: 368px;
+    width: calc((100% - 32px) / 3);
     height: 535px;
   }
 }
@@ -255,7 +257,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--text-main-color);
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 
   @media screen and (min-width: $tablet) {
     line-height: 1.76;
@@ -268,13 +270,13 @@
 }
 
 .products-list__button {
+  margin: 0 auto;
   cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
   background-color: #ffffff;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
