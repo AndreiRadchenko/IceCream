@@ -99,9 +99,9 @@
   background-color: var(--bg-secondary-color);
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   cursor: pointer;
   &:hover,
   &:focus {
@@ -136,6 +136,7 @@
 }
 .close-btn-icon {
   fill: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn-icon:hover,
 .close-btn-icon:focus {
@@ -161,4 +162,12 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.mob-menu__close-btn {
+  fill: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-main-color);
+  }
 }
