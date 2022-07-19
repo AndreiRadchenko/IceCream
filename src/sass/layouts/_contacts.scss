@@ -70,6 +70,17 @@
   }
 }
 
+.contacts__head {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--bg-grey-color);
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 32px;
+  }
+}
 .contacts__title {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
@@ -135,19 +146,15 @@
   text-align: left;
   letter-spacing: 0.06em;
   color: var(--text-casual-color);
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--bg-grey-color);
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.66;
-    padding-bottom: 32px;
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 1.83;
-    padding-bottom: 32px;
     letter-spacing: 0.05em;
   }
 }
@@ -377,7 +384,7 @@
 .locations-modal {
   background-image: url('../images/gallery/tab/many-ice-tab.png');
   @include retina {
-    background-image: url('../images/gallery/tab/many-ice-tab-2x.png');
+    background-image: url('../images/gallery/tab/many-ice-tab-2x.webp');
   }
   background-size: cover;
   background-repeat: no-repeat;
