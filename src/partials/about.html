@@ -6,15 +6,18 @@
     <div class="about__content">
       <picture class="img cow-picture">
         <source
-          srcset="images/about/cow-desk.png 1x, images/about/cow-desk-2x.png 2x"
+          srcset="
+            images/about/cow-desk.webp    1x,
+            images/about/cow-desk-2x.webp 2x
+          "
           media="(min-width: 1200px)"
         />
         <source
-          srcset="images/about/cow-tab.png 1x, images/about/cow-tab-2x.png 2x"
+          srcset="images/about/cow-tab.webp 1x, images/about/cow-tab-2x.webp 2x"
           media="(min-width: 768px)"
         />
         <source
-          srcset="images/about/cow-mob.png 1x, images/about/cow-mob-2x.png 2x"
+          srcset="images/about/cow-mob.webp 1x, images/about/cow-mob-2x.webp 2x"
           media="(min-width: 320px)"
         />
         <img
@@ -51,14 +54,19 @@
 <!--modal-about-->
 <div class="backdrop is-hidden" data-about-modal>
   <div class="about-modal">
-    <button type="button" class="about-close-btn" data-about-modal-close>
+    <button
+      type="button"
+      class="about-close-btn"
+      id="close_vid"
+      data-about-modal-close
+    >
       <svg class="icon-close-about" width="14" height="14">
         <use href="./images/symbol-defs.svg#icon-close-about"></use>
       </svg>
     </button>
     <iframe
       class="about__iframe"
-      src="https://youtube.com/embed/1ddNR6SZPos"
+      src="https://youtube.com/embed/1ddNR6SZPos?enablejsapi=1"
       title="IceCreamFactory"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
